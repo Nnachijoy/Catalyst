@@ -34,12 +34,12 @@ function MyNavBar() {
               ContactUs
             </Nav.Link>
 
-            {/* <Nav.Link onClick={() => redir("/maindb")} className="me-4">
+            <Nav.Link onClick={() => redir("/maindb")} className="me-4">
               Maindb
             </Nav.Link>
             <Nav.Link onClick={() => redir("/investmentdb")} className="me-4">
               Investment
-            </Nav.Link> */}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

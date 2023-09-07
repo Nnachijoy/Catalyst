@@ -69,7 +69,37 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </Col>
   </Row>
 </Container> */}
-        <Row className="g-4 mt-3">
+
+<div>
+  <h3 className='fw-bolder text-center' style={{marginTop:'70px'}}>Companies</h3>
+</div>
+        <Row className="g-4 mt-2">
+          {/* Card 1 */}
+          <Col md={3} className="mb-4">
+          <img src={culture} alt="" className="mt-4" />
+          </Col>
+
+
+          {/* Card 2 */}
+          <Col md={3} className="mb-4">
+          <img src={yourbrand} alt="" className="mt-4" />
+          </Col>
+
+
+
+          {/* Card 3 */}
+          <Col md={3} className="mb-4">
+          <img src={logodesign} alt="" className="mt-4" />
+          </Col>
+
+            {/* Card 4 */}
+          <Col md={3} className="mb-4">
+          <img src={loremippsum} alt="" className="mt-4" />
+
+          </Col>
+        </Row>
+
+        <Row className="g-2 ">
           {/* Card 1 */}
           <Col md={3} className="mb-4">
           <img src={culture} alt="" className="mt-4" />
@@ -96,6 +126,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </Row>
 
        
+        <Row className="g-2 ">
+          {/* Card 1 */}
+          <Col md={3} className="mb-4">
+          <img src={culture} alt="" className="mt-4" />
+          </Col>
+
+
+          {/* Card 2 */}
+          <Col md={3} className="mb-4">
+          <img src={yourbrand} alt="" className="mt-4" />
+          </Col>
+
+
+
+          {/* Card 3 */}
+          <Col md={3} className="mb-4">
+          <img src={logodesign} alt="" className="mt-4" />
+          </Col>
+
+            {/* Card 4 */}
+          <Col md={3} className="mb-4">
+          <img src={loremippsum} alt="" className="mt-4" />
+
+          </Col>
+        </Row>
 
       </Container>
     </div>
