@@ -33,13 +33,17 @@ function MyNavBar() {
             <Nav.Link onClick={() => redir("/contactus")} className="me-4 fw-bolder">
               ContactUs
             </Nav.Link>
-
+{/* 
             <Nav.Link onClick={() => redir("/maindb")} className="me-4">
               Maindb
             </Nav.Link>
             <Nav.Link onClick={() => redir("/investmentdb")} className="me-4">
               Investment
             </Nav.Link>
+
+            <Nav.Link as={Link} to="/blogg" className="me-4">
+              Blog
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

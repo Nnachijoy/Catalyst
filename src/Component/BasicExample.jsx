@@ -143,9 +143,9 @@ function BasicExample() {
             <Nav.Link as={Link} to="/portfolio" className="me-4">
               Portfolio
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/blogg" className="me-4">
+            <Nav.Link as={Link} to="/blogg" className="me-4">
               Blog
-            </Nav.Link> */}
+            </Nav.Link>
             <Nav.Link as={Link} to="/contactus" className="me-4">
               Contact Us
             </Nav.Link>
