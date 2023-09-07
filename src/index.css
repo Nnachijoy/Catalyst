@@ -1,0 +1,414 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+  font-family: 'Inter';
+ 
+ 
+}
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat';
+} */
+
+.hero-h1{
+
+
+
+ font-family: 'inter';
+font-size: 50px;
+font-weight: 900;
+line-height: 67px;
+letter-spacing: -1.5800000429153442px;
+
+
+}
+
+.hero-bg{
+    background: #FFFBEF;
+    font-family: 'Inter';
+    line-height: '60px';
+    letter-spacing: '-1.58px';
+    
+}
+
+
+.seven{
+  background-color: rgb(20, 20, 53);
+}
+
+/* AutoLayoutSizingExample.css */
+@media (max-width: 767px) {
+  /* Reduce the height of the images on mobile */
+  .image-container {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  /* Center the text on mobile */
+  .text-center {
+    text-align: center;
+  }
+}
+
+
+.hero2{
+  margin-top: 60px;
+ 
+}
+
+
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff; /* Change color as needed */
+}
+
+
+
+
+
+.navbar .nav-link:hover {
+  color:#F8CA25; /* Change the color to your desired hover color */
+/* Change the background color to your desired hover color */
+}
+
+.footer a:hover {
+  color: black; /* Change the color to the desired hover color */
+}
+
+@media (max-width: 768px) {
+  .hero-h1 {
+    font-size: 30px; /* Decrease the font size on small screens  HERO HERO HRO*/
+    line-height: 1.2; /* Adjust line height for better readability */
+  /* Limit the height to 3 lines */
+    /* Hide any overflowing text beyond 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+/* Font size and line height for smaller screens (mobile devices) */
+@media (max-width: 576px) {
+  .hero-h1 {
+    font-size: 30px; /* Decrease the font size on small screens */
+    line-height: 1.2; /* Adjust line height for better readability */
+  /* Limit the height to 3 lines */
+    /* Hide any overflowing text beyond 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+/* Cards.css */
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #F8CA25; /* Add the desired background color when hovered */
+}
+
+/* Add any other custom styles here if needed */
+
+
+
+
+
+.card-top-border {
+  border-top: 3px solid #FFCC00;
+
+}
+
+.card-top-border2 {
+  border-top: 3px solid #1375D0;
+
+}
+
+.card-top-border3 {
+  border-top: 3px solid 
+  #35EE5D;
+
+}
+
+
+/* Section.css */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateX(100px); /* Translate 100px to the right */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in-section.active {
+  opacity: 1;
+  transform: translateX(0); /* Translate back to the original position */
+}
+
+/* Define the animation */
+@keyframes pulse {
+  0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #F8CA25;
+  }
+}
+
+/* Apply the animation to the span element */
+.animated-bg {
+  animation: pulse 2s infinite;
+}
+
+
+
+
+/* Section.css */
+
+.typewriter-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0; /* Set initial width to 0 */
+}
+
+.typewriter-animation.active {
+  animation: typing 2s steps(30, end) forwards; /* Use 'forwards' to retain the final width */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.circle-image {
+  width: 50px; /* Adjust the max-width as per your preference */
+  height: 50px; /* Adjust the max-height as per your preference */
+}
+
+
+
+
+
+
+
+
+
+
+p{
+color: #6B7588;
+
+}
+
+
+
+
+/* secondsection3 */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  z-index: 1; /* Place the card content above the image */
+}
+
+
+
+.icons-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.icons-container a {
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.5); /* Lighter gray color with 50% opacity */
+  padding: 7px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.icons-container a:hover {
+  background-color: rgba(128, 128, 128, 0.7); /* Slightly darker gray color on hover with 70% opacity */
+}
+
+.icons-container a svg {
+  color:white; /* Change the icon color to black */
+}
+
+
+/* Add this CSS in your main CSS file or a separate CSS file and import it in your application */
+.icon {
+  color: gray;
+  background-color: transparent;
+}
+
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(30px); /* Use translateX instead of translateY */
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+/* Cards.css */
+
+
+.icon-small {
+  width: 55px; /* Adjust the width to your desired size */
+  height: 55px; /* Maintain the aspect ratio */
+}
+
+
+
+
+.parent {
+  position: relative;
+}
+
+.circle1 {
+ 
+  
+  
+  background-color: rgb(1, 1, 73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-holder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*animation: rotate linear 5s infinite forwards;*/
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.image-holder:hover {
+  animation-play-state: paused;
+}
+
+.image-holder img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* firstimg */
+.image-holder img:nth-child(1) {
+  top: 100px;
+  left: 200px;
+}
+/* side */
+.image-holder img:nth-child(3) {
+  top: 100px;
+  right: 200px;
+}
+
+/* needed */
+.image-holder img:nth-child(5) {
+  bottom: 80px;
+  right: 50px;
+}
+
+.card-content .icons-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.card-content:hover .icons-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-container:hover .icons-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.custom-navbar {
+  background-color: transparent; /* Remove default background */
+  box-shadow: none; /* Remove default shadow */
+}
+
+.navbar-toggler-icon {
+  border-color: white; /* Set the color of the toggler icon */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+/* .nav-link.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 3px; 
+  background-color:#7C6512; 
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 3px;
+  background-color:#7C6512; 
+}
+
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 3px; 
+  background-color: #7C6512; 
+} */ 

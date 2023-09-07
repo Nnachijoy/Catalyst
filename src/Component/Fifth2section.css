@@ -1,0 +1,26 @@
+.image-container {
+    position: relative;
+    
+  }
+  
+  
+  
+  .image-inside {
+    position: absolute;
+    top: 25%; /* Adjust the top value to move the second image higher or lower */
+    left: 145%; /* Adjust the left value to move the second image left or right */
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  /* Media Query for Mobile Devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .image-inside {
+      top: 15%; /* Adjust the top value for mobile screens */
+      left: 50%; /* Center the second image horizontally for mobile screens */
+       
+    }
+  }
+  
+
+ 

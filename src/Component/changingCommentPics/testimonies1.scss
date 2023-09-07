@@ -1,0 +1,213 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.Testimonies {
+  //   width: 100%;
+  background: var(--white-100, #fff);
+
+  h1 {
+    color: var(--dark-color-dark-1, #3a3a3c);
+    text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4375rem; /* 137.5% */
+    letter-spacing: -0.08688rem;
+    margin-top: 6.74vh;
+  }
+  .intro {
+    margin-top: 1.07rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--dark-color-dark-2, #6b7588);
+    text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.125rem; /* 170% */
+    letter-spacing: -0.04125rem;
+    @include mobile {
+      font-size: 1rem;
+      width: 80%;
+    }
+    @include tablet {
+      font-size: 1.3rem;
+      width: 80%;
+    }
+    @include desktop {
+      font-size: 1.125rem;
+      width: 45.84vw;
+    }
+  }
+  .board {
+    width: 80%;
+    // border: 1px solid red;
+    margin: auto;
+    margin-top: 1.12rem;
+    margin-bottom: 12.44vh;
+    position: relative;
+    @include mobile {
+      height: 65.6vw;
+    }
+    @include tablet {
+      max-height: 45.6vw;
+    }
+    @include desktop {
+      height: 35.6vw;
+    }
+    .img {
+      img {
+        width: 4vw;
+        height: 4vw;
+        cursor: pointer;
+      }
+    }
+    .one {
+      position: absolute;
+      left: 14vw;
+      top: 10vh;
+      border-radius: 50%;
+    }
+    .two {
+      position: absolute;
+      left: 14vw;
+      top: 48vh;
+      border-radius: 50%;
+    }
+    .three {
+      position: absolute;
+      left: 58vw;
+      top: 10vh;
+      border-radius: 50%;
+    }
+    .four {
+      position: absolute;
+      left: 59vw;
+      top: 48vh;
+      border-radius: 50%;
+    }
+
+    .five {
+      position: absolute;
+      left: 6vw;
+      top: 29vh;
+      border-radius: 50%;
+    }
+    .testiCard {
+      border-radius: var(--12, 0.75rem);
+      background: var(--white-100, #fff);
+      box-shadow: 0px -1px 35px 0px rgba(59, 59, 59, 0.16);
+      margin: auto;
+      position: absolute;
+      @include mobile {
+        width: 70%;
+        height: 8rem;
+        top: calc(24.4vw / 1.1);
+        left: calc(35% - 24.4vw / 2);
+      }
+      @include tablet {
+        width: 32.75vw;
+        height: 10rem;
+        top: calc(24.4vw / 2.5);
+        left: calc(50% - 29.75vw / 2);
+      }
+      @include desktop {
+        width: 29.75vw;
+        height: 12.4vw;
+        // top: calc(50% - 12.44vw / 2);
+        top: calc(29.75vw / 2.5);
+        left: calc(50% - 29.75vw / 2);
+      }
+
+      p {
+        color: var(--dark-color-dark-2, #6b7588);
+        text-align: center;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.75rem; /* 175% */
+        letter-spacing: -0.03313rem;
+        position: absolute;
+        top: 2rem;
+        @include mobile {
+          font-size: 0.6rem;
+          padding: 0 0.3rem;
+        }
+        @include tablet {
+          font-size: 0.8rem;
+        }
+        @include desktop {
+          font-size: 1rem;
+          padding: 0 2.5rem;
+        }
+      }
+      h6 {
+        display: flex;
+        // width: 5.06138rem;
+        height: 1.3125rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--brand-color-darker, #7c6512);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.03313rem;
+        @include mobile {
+          margin-top: 17%;
+        }
+        @include tablet {
+          margin-top: 19%;
+        }
+        @include desktop {
+          margin-top: 20%;
+        }
+      }
+      .img {
+        position: relative;
+        top: -30px;
+        left: calc(50% - 4rem / 2);
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+      }
+      .minus {
+        position: absolute;
+        cursor: pointer;
+        @include mobile {
+          top: 41%;
+          left: -20px;
+        }
+        @include tablet {
+        }
+        @include desktop {
+          position: absolute;
+          top: 40%;
+          left: -20px;
+        }
+      }
+      .plus {
+        position: absolute;
+        cursor: pointer;
+        @include mobile {
+          top: 40%;
+          left: 50vw;
+        }
+        @include tablet {
+        }
+        @include desktop {
+          top: 40%;
+          left: 28.5vw;
+        }
+      }
+    }
+  }
+}

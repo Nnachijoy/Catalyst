@@ -1,0 +1,18 @@
+.my-nav-bar a{
+    color: var(--dark-color-dark-1, #3A3A3C);
+font-family: DM Sans;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+}
+
+.my-nav-bar a:hover{
+    color: var(--brand-color-darker, #7C6512);
+font-family: DM Sans;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

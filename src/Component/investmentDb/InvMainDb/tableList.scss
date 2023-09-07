@@ -1,0 +1,88 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.table {
+  margin-right: 1.37rem;
+  margin-left: 1.74rem;
+  margin-top: 0.55rem;
+  .tr {
+    width: 63.57469rem;
+    height: 3.125rem;
+    @include flex_between();
+    padding: 1.06rem 1.29rem;
+    color: var(--dark-color-dark-1, #3a3a3c);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    .cell {
+      @include flex_between();
+      justify-content: left;
+      //   border: 1px solid red;
+      width: calc(100% / 6);
+    }
+    .one {
+      justify-content: left;
+      width: 20px;
+    }
+    .two {
+    }
+    .si6 {
+      justify-content: center;
+      color: var(--white-100, #fff);
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem; /* 150% */
+      #detail {
+        display: inline-flex;
+        padding: var(--4, 0.25rem) var(--16, 1rem);
+        align-items: flex-start;
+        gap: var(--8, 0.5rem);
+        border-radius: var(--4, 0.25rem);
+        background-color: #7c6512;
+        width: 5.25rem;
+        color: var(--white-100, #fff);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem; /* 150% */
+        cursor: pointer;
+      }
+    }
+  }
+  .tr:first-child {
+    color: var(--dark-color-dark-2, #6b7588);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 128.571% */
+    background-color: #f2f2f5;
+    span {
+      background-color: #f2f2f5;
+    }
+    #detail {
+      color: var(--dark-color-dark-2, #6b7588);
+
+      /* Paragraph */
+      font-family: Inter;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.125rem; /* 128.571% */
+      background-color: #f2f2f5;
+    }
+  }
+}

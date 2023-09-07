@@ -1,0 +1,27 @@
+.icon-small2 {
+    width: 80px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .first-section{
+    margin-top: 100px;
+  }
+
+  .card-top-border:hover {
+    border-top: 5px solid #35EE5D; /* Change the color or size as desired */
+  }
+
+  .card-top-border2:hover {
+    border-top: 5px solid #F8CA25; /* Change the color or size as desired */
+  }
+
+  .card-top-border3:hover {
+    border-top: 5px solid #1375D0; /* Change the color or size as desired */
+  }
+
+  .lorem{
+    font-size:16px ;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }

@@ -1,0 +1,11 @@
+.sidebar {
+    background: white;
+      color: white;
+      padding: px;
+    }
+
+    
+    .navbar-no-shadow {
+        box-shadow: none;
+      }
+      

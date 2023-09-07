@@ -1,0 +1,21 @@
+.footer{
+    margin-top: 100px;
+}
+
+.footer p a:hover {
+  color: #F8CA25; /* Change the color to the desired hover color */
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+.custom-link-color {
+  color:  #6B7588;
+  ;
+}
+
+.footer .social-icons a:hover {
+  color: #F8CA25; /* Change the color to the desired hover color */
+}
+
+.kkk{
+  color: whitesmoke;
+}

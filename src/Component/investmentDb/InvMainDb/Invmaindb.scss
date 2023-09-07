@@ -1,0 +1,38 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.myDB {
+  display: grid;
+  // grid-template-columns: 12vw 68vw 17vw;
+  min-height: 84rem;
+  grid-template-areas:
+    "sidebar topnav topnav"
+    "sidebar mainCont leftbar"
+    "sidebar mainCont leftbar";
+  .Sidebar {
+    // 14.6ren
+    // border: 1px solid red;
+    grid-area: sidebar;
+  }
+  .MainContent {
+    //90rem
+    // border: 1px solid blue;
+    grid-area: mainCont;
+    min-height: 84rem;
+    border: 0.5px solid var(--dark-color-dark-4, #c7c9d9);
+  }
+  .Leftbar {
+    //21.4rem
+    // border: 1px solid purple;
+    grid-area: leftbar;
+  }
+  .DbtopNav {
+    grid-area: topnav;
+  }
+}

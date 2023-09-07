@@ -1,0 +1,128 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+%pad {
+  padding-left: 1.62rem;
+  padding-right: 1.56rem;
+}
+
+.MainDbDropdwon {
+  width: 14.75rem;
+  min-height: 18.8125rem;
+  border-radius: 0.67494rem;
+  border: 1.08px solid rgba(237, 237, 237, 0.49);
+  background: var(--white-100, #fff);
+  box-shadow: -10px 48.59671px 140px 0px rgba(126, 123, 160, 0.2);
+  backdrop-filter: blur(9.5px);
+  position: fixed;
+  right: 4.45rem;
+  top: 4.25rem;
+  z-index: 1000;
+  @extend %transition;
+  hr {
+    width: 12.5rem;
+    height: 0rem;
+    stroke-width: 1px;
+    stroke: var(--dark-color-dark-4, #c7c9d9);
+  }
+
+  .line1 {
+    @include flex_between();
+    @extend %pad;
+    padding-top: 2.06rem;
+    padding-bottom: 1.03rem;
+    justify-content: start;
+    gap: 0.62rem;
+    .cell {
+      @include flex_col();
+      gap: 0.63rem;
+      .name {
+        color: var(--dark-color-dark-1, #3a3a3c);
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .position {
+        color: var(--dark-color-dark-3, #8f90a6);
+        font-family: Inter;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .line2 {
+    @extend %pad;
+    @include flex_col();
+    justify-content: start;
+    gap: 0.62rem;
+    .line {
+      @include flex_between();
+      justify-content: start;
+      gap: 0.62rem;
+      cursor: pointer;
+      margin-bottom: 1.14rem;
+      img {
+        width: 1.375rem;
+        height: 1.375rem;
+      }
+      .text {
+        overflow: hidden;
+        color: var(--dark-color-dark-2, #6b7588);
+        font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+        text-overflow: ellipsis;
+
+        /* 14 Regular */
+        font-family: Inter;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 142.857% */
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }
+  .line3 {
+    @extend %pad;
+    padding-top: 0.7rem;
+    padding-bottom: 1.06rem;
+    @include flex_col();
+    justify-content: start;
+    gap: 0.62rem;
+    .line {
+      @include flex_between();
+      justify-content: start;
+      gap: 0.62rem;
+      cursor: pointer;
+      img {
+        width: 1.375rem;
+        height: 1.375rem;
+      }
+      .text {
+        overflow: hidden;
+        color: var(--state-color-error, #ff3b3b);
+        font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+        text-overflow: ellipsis;
+        font-family: Inter;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem; /* 142.857% */
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }
+}

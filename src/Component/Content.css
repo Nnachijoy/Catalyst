@@ -1,0 +1,28 @@
+/* .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    padding: 20px;
+  } */
+
+  .content-container {
+    /* margin-top: 20%; */
+    display: flex;
+    justify-content: center; /* Horizontal center alignment */
+    align-items: center; /* Vertical center alignment */
+    height: 100vh; /* Set the height of the container to cover the viewport height */
+  }
+  
+  /* Use Bootstrap's responsive utility classes for mobile devices */
+  @media (max-width: 767.98px) {
+    .content-container {
+      margin-top: 25%;
+      padding-top: 200%;/* Adjust the margin for mobile devices (you can use any value that suits your needs) */
+      align-items: center; /* Center content vertically on mobile */
+    }
+  
+    .content {
+      text-align: center; /* Center content horizontally on mobile */
+    }
+  }

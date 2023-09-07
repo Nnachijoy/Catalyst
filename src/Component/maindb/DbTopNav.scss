@@ -1,0 +1,117 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.DbTopNav {
+  width: 82vw;
+  height: 4.25rem;
+  border-bottom: 1px solid var(--dark-color-dark-4, #c7c9d9);
+  background-color: var(--white-100, #fff);
+  @include flex_between();
+  padding: 0rem 4rem;
+  .boxa {
+    @include flex_between();
+    gap: 1rem;
+    span {
+      color: var(--dark-color-dark-3, #8f90a6);
+      text-align: center;
+      font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+
+      /* 14 Regular */
+      font-family: Inter;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25rem; /* 142.857% */
+    }
+  }
+  .boxb {
+    display: flex;
+    width: 18.4375rem;
+    padding: var(--4, 0.25rem) var(--8, 0.5rem);
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem var(--8, 0.5rem);
+    flex-wrap: wrap;
+    border-radius: var(--8, 0.5rem);
+    background: var(--black-5, rgba(28, 28, 28, 0.05));
+    label {
+      @include flex_between();
+      align-self: stretch;
+      color: var(--dark-color-dark-4, #c7c9d9);
+      font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+      /* 14 Regular */
+      font-family: Inter;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25rem; /* 142.857% */
+      width: 100%;
+      input {
+        outline: none;
+        width: 100%;
+        height: inherit;
+        background-color: transparent;
+        border: none;
+        margin-right: 2rem;
+      }
+    }
+  }
+  .boxc {
+    @include flex_center();
+    gap: 1rem;
+    .notify {
+      display: inline-flex;
+      padding: var(--4, 0.25rem);
+      justify-content: center;
+      align-items: center;
+      gap: var(--4, 0.25rem);
+      border-radius: var(--8, 0.5rem);
+      position: relative;
+      .notifyNumber {
+        position: absolute;
+        top: 9px;
+        right: 12px;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #ff3b3b;
+        color: var(--light-color-light-4, #fafafc);
+        font-family: Inter;
+        font-size: 0.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include flex_center();
+        border-radius: 50%;
+      }
+    }
+    img {
+      width: 2.1875rem;
+      height: 2.1875rem;
+      background-color: #f2f2f5;
+      border-radius: 50%;
+      align-self: center;
+    }
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: var(--dark-color-dark-2, #6b7588);
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%; /* 1.7rem */
+      img {
+        width: var(--16, 1rem);
+        height: var(--16, 1rem);
+        background-color: transparent;
+      }
+    }
+  }
+}
