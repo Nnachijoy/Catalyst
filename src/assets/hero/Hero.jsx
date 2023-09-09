@@ -3,15 +3,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import Button from 'react-bootstrap/Button';
-// import mainimg from "../../assets/mainimg.png";
-// import topimg from "../../assets/topimg.png";
-// import leftimg from "../../assets/leftimg.png";
-// import bottomimg from "../../assets/bottomimg.png";
-// import verticalline from "../../assets/verticalline.png";
+import mainimg from "../../assets/mainimg.png";
+import topimg from "../../assets/topimg.png";
+import leftimg from "../../assets/leftimg.png";
+import bottomimg from "../../assets/bottomimg.png";
+import verticalline from "../../assets/verticalline.png";
 import { NavLink } from "react-router-dom";
-// import Dashboard from "../Dashboard";
-// import Ddd from "../Ddd";
-// import herooo from "../../assets/herooo.png";
+import Dashboard from "../Dashboard";
+import Ddd from "../Ddd";
+import herooo from "../../assets/herooo.png";
 import { Button, Spinner } from "react-bootstrap";
 import HeroImgBox from "./HeroImgBox";
 
@@ -96,60 +96,67 @@ const Hero = () => {
                 reality.
               </p>
 
-          
-      <Button variant="primary" 
-      className='mt-3 text-white w-50 btn-lg d-none d-lg-block p-3'
-        style={{ background: "#F8CA25", 
-        border: "none",
-         transition: 'background 0.3s', 
-        
-         textTransform: 'none',
-         boxShadow: 'none',  fontSize: '17px' }}
-        onMouseEnter={(e) => e.target.style.background = '#000'} 
-        onMouseLeave={(e) => e.target.style.background = '#F8CA25'} 
-      
-      disabled={isLoading} onClick={handleClick}>
-      {isLoading ? (
-        <>
-          <Spinner
-            as="span"
-            animation="border"
-            size="sm"
-            role="status"
-            aria-hidden="true"
-            style={{ marginRight: '5px' }}
-          />
-             <NavLink
-        to="/signup"
-        className="text-white"
-        style={{ textDecoration: 'none' }} // Remove underline
-      >Get Funded Now</NavLink>
-        </>
-      ) : (
-        'Get Funded Now'
-      )}
-    
-    </Button>
+              <Button
+                variant="primary"
+                className="mt-3 text-white w-50 btn-lg d-none d-lg-block p-3"
+                style={{
+                  background: "#F8CA25",
+                  border: "none",
+                  transition: "background 0.3s",
 
+                  textTransform: "none",
+                  boxShadow: "none",
+                  fontSize: "17px",
+                }}
+                onMouseEnter={(e) => (e.target.style.background = "#000")}
+                onMouseLeave={(e) => (e.target.style.background = "#F8CA25")}
+                disabled={isLoading}
+                onClick={handleClick}
+              >
+                {isLoading ? (
+                  <>
+                    <Spinner
+                      as="span"
+                      animation="border"
+                      size="sm"
+                      role="status"
+                      aria-hidden="true"
+                      style={{ marginRight: "5px" }}
+                    />
+                    <NavLink
+                      to="/signup"
+                      className="text-white"
+                      style={{ textDecoration: "none" }} // Remove underline
+                    >
+                      Apply Now
+                    </NavLink>
+                  </>
+                ) : (
+                  "Apply Now"
+                )}
+              </Button>
 
-
-    <Button
-        className='mt-3 text-white w-50 d-lg-none'
-        style={{ background: "#F8CA25", 
-        border: "none",
-         transition: 'background 0.3s', 
-         textTransform: 'none',
-         boxShadow: 'none',  fontSize: '17px' }}
-        onMouseEnter={(e) => e.target.style.background = '#000'} 
-        onMouseLeave={(e) => e.target.style.background = '#F8CA25'}
-      
-      >
-           <NavLink
-        to="/signup"
-        className="text-white"
-        style={{ textDecoration: 'none' }} // Remove underline
-      >Get Funded Now</NavLink>
-      </Button>
+              <Button
+                className="mt-3 text-white w-50 d-lg-none"
+                style={{
+                  background: "#F8CA25",
+                  border: "none",
+                  transition: "background 0.3s",
+                  textTransform: "none",
+                  boxShadow: "none",
+                  fontSize: "17px",
+                }}
+                onMouseEnter={(e) => (e.target.style.background = "#000")}
+                onMouseLeave={(e) => (e.target.style.background = "#F8CA25")}
+              >
+                <NavLink
+                  to="/signup"
+                  className="text-white"
+                  style={{ textDecoration: "none" }} // Remove underline
+                >
+                  Apply Now
+                </NavLink>
+              </Button>
 
               <div>
                 <div className="mt-5 w-50 w-md-auto">
@@ -214,7 +221,7 @@ const Hero = () => {
     <img src={bottomimg} alt="Bottom Image" className="img-fluid" />
   </div>
 </Col> */}
-          <Col md={4} className="slide-in">
+          <Col md={4} className=" slide-in">
             <HeroImgBox />
           </Col>
         </Row>

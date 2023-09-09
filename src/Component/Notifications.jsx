@@ -444,17 +444,26 @@ const Editdetails = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => setSelectedContent('newnotification')} className="home me-5" style={{ color: '#7C6512' }}>
-             New Notification
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('readnotification')} className="me-5">
-             Read Notification
-              </Nav.Link>
+            <Nav.Link
+              onClick={() => { setSelectedContent('newnotification'); redir("/") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'newnotification' ? '#7C6512' : '' }}
+            >
+              New Notification
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => { setSelectedContent('readnotification'); redir("/readnotification") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'readnotification' ? '#7C6512' : '' }}
+            >
+              Read Notification
+            </Nav.Link>
             
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <hr/>
 
       <Container className='p-3 '>
         <div className='p-4' style={{ backgroundColor: 'white', minHeight: '100vh' }}>

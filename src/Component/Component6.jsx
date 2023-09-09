@@ -129,7 +129,96 @@ const  Component6 = () => {
     setShowPassword(!showPassword);
   };
 
+  const [showPassword1, setShowPassword1] = useState(false);
 
+const togglePasswordVisibility1 = () => {
+  setShowPassword1(!showPassword1);
+};
+
+
+
+const [showPassword2, setShowPassword2] = useState(false);
+
+const togglePasswordVisibility2 = () => {
+  setShowPassword2(!showPassword2);
+};
+
+
+  // socialmedia
+  const [isEditing, setIsEditing] = useState(false);
+  const [inputValue, setInputValue] = useState('https://facebook.com/helenchiweike');
+
+  const [isEditing1, setIsEditing1] = useState(false);
+const [inputValue1, setInputValue1] = useState('https://instagram.com/helenchiweike');
+
+const [isEditing2, setIsEditing2] = useState(false);
+const [inputValue2, setInputValue2] = useState('https://linkedin.com/helenchiweike');
+
+const [isEditing3, setIsEditing3] = useState(false);
+const [inputValue3, setInputValue3] = useState('https://twitter.com/helenchiweike');
+
+const [isEditing4, setIsEditing4] = useState(false);
+const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweike');
+
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
+  const handleEditClick1 = () => {
+    setIsEditing1(true);
+  };
+  const handleEditClick2 = () => {
+    setIsEditing2(true);
+  };
+  const handleEditClick3 = () => {
+    setIsEditing3(true);
+  };
+  const handleEditClick4 = () => {
+    setIsEditing4(true);
+  };
+
+
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleInputChange1 = (e) => {
+    setInputValue1(e.target.value);
+  };
+
+  const handleInputChange2 = (e) => {
+    setInputValue2(e.target.value);
+  };
+
+ 
+  const handleInputChange3 = (e) => {
+    setInputValue3(e.target.value);
+  };
+
+  const handleInputChange4 = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleSaveClick = () => {
+    setIsEditing(false);
+    // Add code to handle saving the input value
+  };
+
+  const handleSaveClick1 = () => {
+    setIsEditing1(false);
+  };
+  
+    const handleSaveClick2 = () => {
+      setIsEditing2(false);
+    };
+      
+  const handleSaveClick3 = () => {
+    setIsEditing3(false);
+  };
+
+    const handleSaveClick4 = () => {
+      setIsEditing4(false);
+   };
 
   const [switches, setSwitches] = useState({
     switch1: false,
@@ -176,6 +265,22 @@ const  Component6 = () => {
       newsUpdate: 'Discover tailored recommendations that match your preferences.',
       newsUpdateHeader: 'Personalized Recommendations',
     },
+
+    {
+      id: 'switch5',
+      newsUpdate: 'Explore the latest trends and stay ahead with our insightful newsletters.',
+      newsUpdateHeader: 'Trendy Tips and Insights',
+    },
+
+    {
+      id: 'switch6',
+      // label: 'Toggle 3',
+      // text: 'Get alerts for breaking news and important announcements.',
+      newsUpdate: 'Be the first to know about breaking news and important updates.',
+      newsUpdateHeader: 'Breaking News Alerts',
+    },
+
+    
 
     
   ];
@@ -252,119 +357,13 @@ const  Component6 = () => {
 </div>
 
 
-
-
-
-
-
-
-
-//          <div>
-// <div className="container">
-
-
-
-// <div className="row">
-//     <div className="col-md-4 col-12">
-//      <h6 style={{color:'#7C6512'}} className='fw-bolder'>Email Notification</h6>
-//      <p style={{fontSize:'14px'}}>Get emails to find out what’s going on when you’re not 
-//      online. You can turn these off.</p>
-//     </div>
-    
-//     <div className="col-md-7 col-10">
-//  <h5 className='fw-bolder'>News and Updates</h5>
-//  <p>Lorem ipsum dolor news about product 
-//   and feature updates consectetur adipiscing elit, sed do eiusmod tempor incididu tlabor</p>
-//     </div>
-//     <div className="col-md-1 col-2">
-//     <Form className='mb-3'>
-//       <label style={switchStyles} onClick={toggleSwitch}>
-//         <span style={thumbStyles}></span>
-//       </label>
-//     </Form>
-//     </div>
-//   </div>
-
-
-
-
-//   <div className="row">
-//     <div className="col-md-4 col-12">
-
-//     </div>
-//     <div className="col-md-7 col-10">
-//  <h5 className='fw-bolder'>Tips and Tutorials</h5>
-//  <p>Lorem ipsum dolor news about product 
-//   and feature updates consectetur adipiscing elit, sed do eiusmod tempor incididu tlabor</p>
-//     </div>
-//     <div className="col-md-1 col-2">
-//     <Form className='mb-3'>
-//       <label style={switchStyles} onClick={toggleSwitch}>
-//         <span style={thumbStyles}></span>
-//       </label>
-//     </Form>
-//     </div>
-//   </div>
-
-
-//   <div className="row">
-//     <div className="col-md-4 col-12">
-
-//     </div>
-//     <div className="col-md-7 col-10">
-//  <h5 className='fw-bolder'>News and Updates</h5>
-//  <p>Lorem ipsum dolor news about product 
-//   and feature updates consectetur adipiscing elit, sed do eiusmod tempor incididu tlabor</p>
-//     </div>
-//     <div className="col-md-1 col-2">
-//     <Form className='mb-3'>
-//       <label style={switchStyles} onClick={toggleSwitch}>
-//         <span style={thumbStyles}></span>
-//       </label>
-//     </Form>
-//     </div>
-//   </div>
-
-
-//   <div className="row">
-//     <div className="col-md-4 col-12">
-
-//     </div>
-//     <div className="col-md-7 col-10">
-//  <h5 className='fw-bolder'>News and Updates</h5>
-//  <p>Lorem ipsum dolor news about product 
-//   and feature updates consectetur adipiscing elit, sed do eiusmod tempor incididu tlabor</p>
-//     </div>
-//     <div className="col-md-1 col-2">
-//     <Form className='mb-3'>
-//       <label style={switchStyles} onClick={toggleSwitch}>
-//         <span style={thumbStyles}></span>
-//       </label>
-//     </Form>
-//     </div>
-//   </div>
-// </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-//          </div>
         );
       case 'security':
         return (
         <div>
 <Row>
   <Col>
-  <Form>
+  <Form style={{outline:'none'}}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label className='fw-bolder text-muted'>Current Password</Form.Label>
         <div className="position-relative">
@@ -372,6 +371,7 @@ const  Component6 = () => {
             className='p-3'
             type={showPassword ? "text" : "password"}
             placeholder="12345678"
+            style={{ boxShadow: 'none' }}
           />
           <div
             className="position-absolute end-0 p-5 top-50 justify-content-end translate-middle-y"
@@ -386,28 +386,30 @@ const  Component6 = () => {
   </Col>
 
   <Col>
-  
+  {/* emptycol */}
   </Col>
 </Row>
 
+<h4 style={{color:'#7C6512'}} className='mt-5 fw-bolder'>Create New Password</h4>
 
 <Row>
   <Col>
   <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label className='fw-bolder text-muted'>Set Password</Form.Label>
+      <Form.Group className="mt-1" controlId="exampleForm.ControlInput1">
+        <Form.Label className='fw-bolder text-muted'>Set New Password</Form.Label>
         <div className="position-relative">
           <Form.Control
             className='p-3'
-            type={showPassword ? "text" : "password"}
+            type={showPassword1 ? "text" : "password"}
             placeholder="12345678"
+            style={{ boxShadow: 'none' }}
           />
           <div
             className="position-absolute end-0 p-5 top-50 justify-content-end translate-middle-y"
             style={{ cursor: 'pointer', left:'' }}
-            onClick={togglePasswordVisibility}
+            onClick={togglePasswordVisibility1}
           >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
+            {showPassword1 ? <FaEyeSlash /> : <FaEye />}
           </div>
         </div>
       </Form.Group>
@@ -415,29 +417,28 @@ const  Component6 = () => {
   </Col>
 
   <Col>
-  
+  {/* emptycol */}
   </Col>
 </Row>
-
-
 
 <Row>
   <Col>
   <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      <Form.Group className="mt-2" controlId="exampleForm.ControlInput1">
         <Form.Label className='fw-bolder text-muted'>Confirm Password</Form.Label>
         <div className="position-relative">
           <Form.Control
             className='p-3'
-            type={showPassword ? "text" : "password"}
+            type={showPassword2 ? "text" : "password"}
             placeholder="12345678"
+            style={{ boxShadow: 'none' }}
           />
           <div
             className="position-absolute end-0 p-5 top-50 justify-content-end translate-middle-y"
             style={{ cursor: 'pointer', left:'' }}
-            onClick={togglePasswordVisibility}
+            onClick={togglePasswordVisibility2}
           >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
+            {showPassword2 ? <FaEyeSlash /> : <FaEye />}
           </div>
         </div>
       </Form.Group>
@@ -445,7 +446,7 @@ const  Component6 = () => {
   </Col>
 
   <Col>
-  
+  {/* empty col */}
   </Col>
 </Row>
 
@@ -461,13 +462,13 @@ const  Component6 = () => {
             border: "2px solid #F8CA25",
           
           }}
-              className='w-100 p-3 shadow-none mt-4 btn-sm'>
-          <NavLink style={{color: 'white', textDecoration:'none', fontSize:'19px'}} to="/resetpassword" >Update</NavLink>
+              className='w-100 p-2 shadow-none mt-4 btn-sm'>
+          <NavLink style={{color: 'white', textDecoration:'none', fontSize:'19px'}} to="/" >Update</NavLink>
               </Button>
   </Col>
 
   <Col>
-
+{/* emptycol */}
   </Col>
 </Row>
     
@@ -491,77 +492,360 @@ const  Component6 = () => {
           </div>
         );
 
+        case 'socialmedia':
+          return (
+            <div>
+
+
+ <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11, display: 'flex', alignItems: 'center' }}>
+        <img src={Facebookdb} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue}
+            onChange={handleInputChange}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+
+    <div style={{ display: 'flex', alignItems: 'center' }} className='mt-4'>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11,
+       display: 'flex', alignItems: 'center' }}>
+        <img src={Instagramdb} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing1 ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue1}
+            onChange={handleInputChange1}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue1}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick1} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+    <div style={{ display: 'flex', alignItems: 'center' }} className='mt-4'>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11,
+       display: 'flex', alignItems: 'center' }}>
+        <img src={Linkedindb} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing2 ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue2}
+            onChange={handleInputChange2}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue2}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick2} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick2} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+    <div style={{ display: 'flex', alignItems: 'center' }} className='mt-4'>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11,
+       display: 'flex', alignItems: 'center' }}>
+        <img src={Twitterdb} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing3 ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue2}
+            onChange={handleInputChange3}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue3}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick3} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick3} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+
+    <div style={{ display: 'flex', alignItems: 'center' }} className='mt-4'>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11,
+       display: 'flex', alignItems: 'center' }}>
+        <img src={Discorddb} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing4 ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue2}
+            onChange={handleInputChange4}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue4}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick4} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick4} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+
+    <Button
+             style={{
+              backgroundColor:'#F8CA25', 
+              color: 'white',
+              fontSize: '16px',
+            textTransform:'none',
+            border: "2px solid #F8CA25",
+          
+          }}
+              className='w-50 p-3 shadow-none mt-4 btn-sm'>
+          <NavLink style={{color: 'white', textDecoration:'none', fontSize:'19px'}} to="/" >Update</NavLink>
+              </Button> 
+            {/* <div className="mt-3">
+              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
+<img src={Discorddb} alt="Section Image" className="img-fluid mb-0 me-1" />    https://discord.com/helenchiweike
+</div>
+            </div> */}
+
+          </div>
+          );
+
 
         
       default:
         return (
           <div>
-
-            
-
-<MDBRow className='mt-4'>
-            
-            <MDBCol xs={12} md={7}>
-
-
-            <Form>
+         <Row>
+          <Col>
+          <Form style={{}}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label className='fw-bolder text-muted'>First Name</Form.Label>
-        <div className="position-relative">
+       
           <Form.Control
-            className='p-3 shadow-0'
+            className='p-3'
+            type='name'
             placeholder="Helen"
+            style={{ boxShadow: 'none', background:'#FAFAFC'
+           }}
           />
-        
-        </div>
+       
+ 
+      
       </Form.Group>
-    </Form>
 
-     
-
-    <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      <Form.Group className="mt-3" controlId="exampleForm.ControlInput1">
         <Form.Label className='fw-bolder text-muted'>Last Name</Form.Label>
-        <div className="position-relative">
+       
           <Form.Control
-            className='p-3 shadow-0'
+            className='p-3'
+            type='name'
             placeholder="Chinweike"
+            style={{ boxShadow: 'none', background:'#FAFAFC'
+           }}
           />
-        
-        </div>
+       
+ 
+      
       </Form.Group>
-    </Form>
 
-    <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label className='fw-bolder text-muted'>Phone Number</Form.Label>
-        <div className="position-relative">
+      <Form.Group className="mt-3" controlId="exampleForm.ControlInput1">
+        <Form.Label className='fw-bolder text-muted'> Phone Number</Form.Label>
+      
           <Form.Control
-            className='p-3 shadow-0'
-            placeholder="08069845980"
+            className='p-3'
+            type='text'
+            placeholder="08127451653"
+            style={{ boxShadow: 'none', background:'#FAFAFC'
+           }}
           />
-        
-        </div>
+       
+ 
+      
       </Form.Group>
-    </Form>
 
 
-    <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      <Form.Group className="mt-3" controlId="exampleForm.ControlInput1">
         <Form.Label className='fw-bolder text-muted'>Email Address</Form.Label>
-        <div className="position-relative">
+      
           <Form.Control
-            className='p-3 shadow-0'
+            className='p-3'
+            type='email'
             placeholder="helenchinweike@gmail.com"
+            style={{ boxShadow: 'none', background:'#FAFAFC'
+           }}
           />
-        
-        </div>
+       
+ 
+      
       </Form.Group>
     </Form>
 
-              {/* <p className="mt-2"> Want to change your email address?<NavLink to="/resetemail" 
-     className="" style={{ color: '#F8CA25' }}>Click Here</NavLink></p> */}
-
+      
 <Button
              style={{
               backgroundColor:'#F8CA25', 
@@ -571,55 +855,15 @@ const  Component6 = () => {
             border: "2px solid #F8CA25",
           
           }}
-              className='w-100 p-3 shadow-none mt-4 btn-sm'>
-          <NavLink style={{color: 'white', textDecoration:'none', fontSize:'19px'}} to="/editdetails" >Update</NavLink>
+              className='w-100 p-2 shadow-none mt-4 btn-sm'>
+          <NavLink style={{color: 'white', textDecoration:'none', fontSize:'19px'}} to="/" >Update</NavLink>
               </Button>
+          </Col>
 
-
-            </MDBCol>
-
-
-
-    
-            <MDBCol xs={12} md={5}>
-            <div className="mt-4">
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-<img src={Facebookdb} alt="Section Image" className="img-fluid mb-0 me-2" />    https://facebook.com/helenchiweike
-</div>
-            </div>
-
-            <div className="mt-3">
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-<img src={Instagramdb} alt="Section Image" className="img-fluid mb-0 me-1" />    https://instagram.com/helenchiweike
-</div>
-            </div>
-
-            <div className="mt-3">
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-<img src={Linkedindb} alt="Section Image" className="img-fluid mb-0 me-1" />    https://linkedin.com/helenchiweike
-</div>
-            </div>
-
-            <div className="mt-3">
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-<img src={Twitterdb} alt="Section Image" className="img-fluid mb-0 me-1" />    https://twitter.com/helenchiweike
-</div>
-            </div>
-
-
-            <div className="mt-3">
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-<img src={Discorddb} alt="Section Image" className="img-fluid mb-0 me-1" />    https://discord.com/helenchiweike
-</div>
-            </div>
-
-            
-            </MDBCol>
-
-            
-          </MDBRow>   
-  
-
+          <Col>
+          {/* emptycol */}
+          </Col>
+         </Row>
           </div>
         );
     }
@@ -688,65 +932,85 @@ const  Component6 = () => {
     <div className='p-4' style={{ backgroundColor: 'white', minHeight: '100vh' }}>
    
    <div>
-    {/* <Row>
-      <Col md="7">
-
-      
-      <Row className="p-0 mt-4">
-      <Col xs="auto">
-      <img src={elitelogo} alt="" className="p-0" />
-
-      </Col>
-      <Col className='me-4 mt-4'>
-        <div>
-          <h6 className='fw-bold'>Elitepath software</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-             sed do eiusmod tempor incididunt ut labore </p>
-        </div>
-      </Col>
-    </Row>
   
-
-      </Col>
-
-
-      <Col md="5">
-  
-      </Col>
-      </Row> */}
-
-   
-
-
     </div>
 
    
     <div style={{ minHeight: '100vh' }}>
-      <Navbar expand="lg" className="custom-navbar mt-3">
-        <Container className=''>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto fw-bold px-3">
-              <Nav.Link onClick={() => setSelectedContent('overview')} className="home me-5" style={{ color: '#7C6512' }}>
-               Profile Details
-              </Nav.Link>
-         
-              <Nav.Link onClick={() => setSelectedContent('notification')} className="me-5">
-               Notification
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('security')} className="me-5">
-             Security & Privacy
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('account')} className="me-5">
-               Account
-              </Nav.Link>
-          
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <Navbar expand="lg" className="custom-navbar mt-3">
+      <Container className=''>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto fw-bold px-3 me-5">
+            <Nav.Link className='me-5'
+              onClick={() => setSelectedContent('overview')}
+              style={{
+                marginRight: '5px',
+                color: selectedContent === 'overview' ? '#7C6512' : '#000000',
+                fontWeight: selectedContent === 'overview' ? 'bold' : 'normal',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Profile Details
+            </Nav.Link>
+
+            <Nav.Link className='me-5'
+              onClick={() => setSelectedContent('socialmedia')}
+              style={{
+                marginRight: '5px',
+                color: selectedContent === 'socialmedia' ? '#7C6512' : '#000000',
+                fontWeight: selectedContent === 'socialmedia' ? 'bold' : 'normal',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Social Media
+            </Nav.Link>
+
+            <Nav.Link  className='me-5'
+              onClick={() => setSelectedContent('notification')}
+              style={{
+                marginRight: '5px',
+                color: selectedContent === 'notification' ? '#7C6512' : '#000000',
+                fontWeight: selectedContent === 'notification' ? 'bold' : 'normal',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Notification
+            </Nav.Link>
+
+            <Nav.Link  className='me-5'
+              onClick={() => setSelectedContent('security')}
+              style={{
+                marginRight: '5px',
+                color: selectedContent === 'security' ? '#7C6512' : '#000000',
+                fontWeight: selectedContent === 'security' ? 'bold' : 'normal',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Security & Privacy
+            </Nav.Link>
+
+            <Nav.Link  className='me-5'
+              onClick={() => setSelectedContent('account')}
+              style={{
+                color: selectedContent === 'account' ? '#7C6512' : '#000000',
+                fontWeight: selectedContent === 'account' ? 'bold' : 'normal',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Account
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       <hr/>
 
       <Container className='p-3 '>

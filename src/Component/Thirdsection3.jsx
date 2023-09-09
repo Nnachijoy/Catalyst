@@ -1,163 +1,615 @@
+
+
+
+// import React, { useState } from 'react';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import culture from "../assets/culture.png";
+// import yourbrand from "../assets/yourbrand.png";
+// import logodesign from "../assets/logodesign.png";
+// import loremippsum from "../assets/loremippsum.png";
+// import fourthhsvg from "../assets/fourthhsvg.png";
+// import closex from "../assets/closex.png";
+// import Firstcompany from './Firstcompany';
+
+
+// function Cards() {
+  
+ 
+//     const [selectedCard, setSelectedCard] = useState(null);
+//     const [isSlidingIn, setIsSlidingIn] = useState(false);
+  
+//     const handleCardClick = (index) => {
+//       setSelectedCard(cards[index]);
+//       setIsSlidingIn(true);
+  
+//       setTimeout(() => {
+//         setIsSlidingIn(false);
+//       }, 300); // Adjust the time to match the transition duration
+//     };
+
+//   const cards = [
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//   ];
+  
+
+ 
+
+//   return (
+//     <Container>
+
+
+
+// <div className='text-center my-5 p-5 mt-2'>
+//       <h3 className='fw-bolder'>Igniting Innovation, One<br/> Venture at a Time</h3>
+//         <p  className='mt-3'>Welcome to our diverse and dynamic portfolio of startups. Each one of 
+//           these visionary<br/> ventures represents the essence of innovation, resilience, 
+//           and the pursuit of<br/> excellence. We are dedicated in funding Pre-Seed 
+//           to Series A in Health tech, Edtech,<br/> Enterprise SaaS, Agri-Tech, Food Security,
+//            Green Energy and Financial Services. </p>
+//         </div>
+//         <Container>
+//   <div className='w-100'>
+//     <img
+//       src={fourthhsvg}
+//       alt=""
+//       className=""
+//       style={{ maxWidth: '100%', height: 'auto' }} // Set max width to 100% and auto adjust height
+//     />
+//   </div>
+// </Container>
+
+
+// <div>
+//   <p>With over 25,000 customers worldwide, Appex is the world leading analytics and marketing suite for Instagram and a 
+//     partner of the world's most-loved brands such as National Geographic, Gucci, Marc Jacobs, Samsung, Emirates and more.</p>
+
+
+// <p>
+// Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+//  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+// </p>
+
+// </div>
+
+
+// <div>
+//       <Row className="g-4 mt-2">
+//         {cards.map((card, index) => (
+//           <Col md={3} className="mb-4" key={index}>
+//             <img
+//               src={card.imgSrc}
+//               alt={`Card ${index + 1}`}
+//               onClick={() => handleCardClick(index)}
+//             />
+//           </Col>
+//         ))}
+//       </Row>
+
+// <div className=' w-75' style={{ marginLeft: 'auto' }}>
+//       {selectedCard && (
+//         <div 
+//           style={{
+           
+//             top: '50%',
+//             left: '50%',
+//             transform: 'translateY(-100%)',
+//             transition: 'transform 0.5s ease-in-out', // Add slide-in transition
+//             transform: isSlidingIn ? 'translateX(-100%)' : 'translateY(-100%)',
+            
+//             backgroundColor: '#ffffff',
+//             padding: '20px',
+//             boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+//             zIndex: '9999',
+//           }}
+
+
+
+
+
+
+
+
+//         >
+//           <button
+//             onClick={() => setSelectedCard(null)}
+//             style={{
+//               border: 'none',
+//               background: 'none',
+//               padding: '0',
+//               float: 'right',
+//             }}
+//           >
+//             <img 
+//               src={closex} 
+//               alt="" 
+//               className="border-none" 
+//               style={{
+//                 border: 'none',
+//                 marginRight: '10px',
+//               }} 
+//             />
+//           </button>
+//           <p 
+//             className="fw-bolder" 
+//             style={{
+//               fontSize: '20px',
+//             }}
+//           >
+//             {selectedCard.content}
+//           </p>
+//         </div>
+//       )}
+//     </div>
+//     </div>
+
+//     </Container>
+//   );
+// }
+
+// export default Cards;
+
+
+
+
+// import React, { useState } from 'react';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Pagination from 'react-bootstrap/Pagination'; // Import Pagination component
+
+// import culture from "../assets/culture.png";
+// import yourbrand from "../assets/yourbrand.png";
+// import logodesign from "../assets/logodesign.png";
+// import loremippsum from "../assets/loremippsum.png";
+// import fourthhsvg from "../assets/fourthhsvg.png";
+// import closex from "../assets/closex.png";
+// import Firstcompany from './Firstcompany';
+
+// function Cards() {
+//   const [selectedCard, setSelectedCard] = useState(null);
+//   const [isSlidingIn, setIsSlidingIn] = useState(false);
+//   const [currentPage, setCurrentPage] = useState(1);
+//   const cardsPerPage = 4;
+
+//   const handleCardClick = (index) => {
+//     setSelectedCard(cards[index]);
+//     setIsSlidingIn(true);
+
+//     setTimeout(() => {
+//       setIsSlidingIn(false);
+//     }, 300);
+//   };
+
+//   const cards = [
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//     { imgSrc: culture, content: <Firstcompany /> },
+//     { imgSrc: yourbrand, content: <Firstcompany /> },
+//     { imgSrc: logodesign, content:<Firstcompany />  },
+//     { imgSrc: loremippsum, content: "Content for Lorem Ipsum" },
+//   ];
+//   const [hoveredIndex1, setHoveredIndex1] = useState(null); // For the first set of rows
+//   const [hoveredIndex2, setHoveredIndex2] = useState(null); // For the second set of rows
+
+//   const indexOfLastCard = currentPage * cardsPerPage;
+//   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+//   const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
+
+//   const paginate = (pageNumber) => {
+//     setCurrentPage(pageNumber);
+//   };
+
+
+//   const paginationItems = [];
+//   for (let number = 1; number <= Math.ceil(cards.length / cardsPerPage); number++) {
+//     paginationItems.push(
+//       <Pagination.Item
+//         key={number}
+//         active={number === currentPage}
+//         onClick={() => paginate(number)}
+//       >
+//         {number}
+//       </Pagination.Item>,
+//     );
+//   }
+
+//   return (
+//     <Container>
+//       <div className='text-center my-5 p-5 mt-2'>
+//         <h3 className='fw-bolder'>Igniting Innovation, One<br/> Venture at a Time</h3>
+//         <p className='mt-3'>Welcome to our diverse and dynamic portfolio of startups. Each one of 
+//           these visionary<br/> ventures represents the essence of innovation, resilience, 
+//           and the pursuit of<br/> excellence. We are dedicated in funding Pre-Seed 
+//           to Series A in Health tech, Edtech,<br/> Enterprise SaaS, Agri-Tech, Food Security,
+//           Green Energy and Financial Services. </p>
+//       </div>
+//       <Container>
+//         <div className='w-100'>
+//           <img
+//             src={fourthhsvg}
+//             alt=""
+//             className=""
+//             style={{ maxWidth: '100%', height: 'auto' }}
+//           />
+//         </div>
+//       </Container>
+
+//       <div>
+//         <p>With over 25,000 customers worldwide, Appex is the world leading analytics and marketing suite for Instagram and a 
+//           partner of the world's most-loved brands such as National Geographic, Gucci, Marc Jacobs, Samsung, Emirates and more.</p>
+
+//         <p>
+//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+//         </p>
+//       </div>
+
+//       <div>
+//         {/* <Row className="g-4 mt-2">
+//           {currentCards.map((card, index) => (
+//             <Col md={3} className="mb-4" key={index}>
+//               <img
+//                 src={card.imgSrc}
+//                 alt={`Card ${index + 1}`}
+//                 onClick={() => handleCardClick(index)}
+//               />
+//             </Col>
+//           ))}
+//         </Row> */}
+//        <Row className="g-4 mt-2">
+//         {currentCards.map((card, index) => (
+//           <Col
+//             md={3}
+//             className="mb-4"
+//             key={index}
+//             style={{
+//               cursor: 'pointer',
+//               boxShadow: hoveredIndex1 === index ? '0 4px 12px rgba(0, 0, 0, 0.2)' : 'none',
+//               transition: 'box-shadow 0.3s',
+//             }}
+//             onMouseEnter={() => setHoveredIndex1(index)}
+//             onMouseLeave={() => setHoveredIndex1(null)}
+//           >
+//             <img
+//               src={card.imgSrc}
+//               alt={`Card ${index + 1}`}
+//               onClick={() => handleCardClick(index)}
+//             />
+//           </Col>
+//         ))}
+//       </Row>
+
+//       {/* Second set of rows */}
+//       <Row className="g-4 mt-2">
+//         {currentCards.map((card, index) => (
+//           <Col
+//             md={3}
+//             className="mb-4"
+//             key={index}
+//             style={{
+//               cursor: 'pointer',
+//               boxShadow: hoveredIndex2 === index ? '0 4px 12px rgba(0, 0, 0, 0.2)' : 'none',
+//               transition: 'box-shadow 0.3s',
+//             }}
+//             onMouseEnter={() => setHoveredIndex2(index)}
+//             onMouseLeave={() => setHoveredIndex2(null)}
+//           >
+//             <img
+//               src={card.imgSrc}
+//               alt={`Card ${index + 1}`}
+//               onClick={() => handleCardClick(index)}
+//             />
+//           </Col>
+//         ))}
+//       </Row>
+        
+//         <div className='w-75' style={{ marginLeft: 'auto' }}>
+//           {selectedCard && (
+//             <div 
+//               style={{
+//                 top: '50%',
+//                 left: '50%',
+//                 transform: 'translateY(-100%)',
+//                 transition: 'transform 0.5s ease-in-out',
+//                 transform: isSlidingIn ? 'translateX(-50%)' : 'translateY(-50%)',
+//                 backgroundColor: '#ffffff',
+//                 padding: '20px',
+//                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+//                 zIndex: '9999',
+//               }}
+//             >
+//               <button
+//                 onClick={() => setSelectedCard(null)}
+//                 style={{
+//                   border: 'none',
+//                   background: 'none',
+//                   padding: '0',
+//                   float: 'right',
+//                 }}
+//               >
+//                 <img 
+//                   src={closex} 
+//                   alt="" 
+//                   className="border-none" 
+//                   style={{
+//                     border: 'none',
+//                     marginRight: '10px',
+//                   }} 
+//                 />
+//               </button>
+//               <p 
+//                 className="fw-bolder" 
+//                 style={{
+//                   fontSize: '20px',
+//                 }}
+//               >
+//                 {selectedCard.content}
+//               </p>
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="mt-4">
+//           <Pagination>{paginationItems}</Pagination>
+//         </div>
+//       </div>
+//     </Container>
+//   );
+// }
+
+// export default Cards;
+
+
+
+
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import cardimg from "../assets/cardimg.png";
-import thirdsvg from "../assets/thirdsvg.png";
+import Pagination from 'react-bootstrap/Pagination';
+
 import culture from "../assets/culture.png";
 import yourbrand from "../assets/yourbrand.png";
 import logodesign from "../assets/logodesign.png";
-import fourthhsvg from "../assets/fourthhsvg.png";
 import loremippsum from "../assets/loremippsum.png";
+import fourthhsvg from "../assets/fourthhsvg.png";
+import closex from "../assets/closex.png";
+import Firstcompany from './Firstcompany';
 
 function Cards() {
-  return (
-    <div>
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [isSlidingIn, setIsSlidingIn] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsPerPage = 4;
 
-        
-      <Container className="">
-        <div className='text-center my-5 p-5 mt-2'>
-      <h3 className='fw-bolder'>Igniting Innovation, One<br/> Venture at a Time</h3>
-        <p  className='mt-3'>Welcome to our diverse and dynamic portfolio of startups. Each one of 
-          these visionary<br/> ventures represents the essence of innovation, resilience, 
-          and the pursuit of<br/> excellence. We are dedicated in funding Pre-Seed 
-          to Series A in Health tech, Edtech,<br/> Enterprise SaaS, Agri-Tech, Food Security,
-           Green Energy and Financial Services. </p>
-        </div>
-        <Container>
-  <div className='w-100'>
-    <img
-      src={fourthhsvg}
-      alt=""
-      className=""
-      style={{ maxWidth: '100%', height: 'auto' }} // Set max width to 100% and auto adjust height
-    />
-  </div>
-</Container>
+  const handleCardClick = (index) => {
+    setSelectedCard(cards[index]);
+    setIsSlidingIn(true);
 
+    setTimeout(() => {
+      setIsSlidingIn(false);
+    }, 300);
+  };
 
-<div>
-  <p>With over 25,000 customers worldwide, Appex is the world leading analytics and marketing suite for Instagram and a 
-    partner of the world's most-loved brands such as National Geographic, Gucci, Marc Jacobs, Samsung, Emirates and more.</p>
+  const cards = [
+    { imgSrc: culture, content: <Firstcompany /> },
+    { imgSrc: yourbrand, content: <Firstcompany /> },
+    { imgSrc: logodesign, content: <Firstcompany /> },
+    { imgSrc: loremippsum, content: <Firstcompany />  },
 
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit,
- sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
-</p>
-
-</div>
-
-
-
-
-
-        {/* <Container>
-  <Row className="justify-content-center mt-5">
-  <Col md={6}>
-  <div className="d-flex justify-content-between align-items-center fw-bolder flex-wrap my-container">
-      <span style={{ color: "#7C6512" }}  className='me-2'>ALL Works</span>
-      <span className='me-2 mb-2'>BRANDING</span>
-      <span className='mb-2' >BRANDING</span>
-      <span className='me-2 mb-2'>BRANDING</span>
-    </div>
+    { imgSrc: culture, content: <Firstcompany /> },
+    { imgSrc: yourbrand, content: <Firstcompany /> },
+    { imgSrc: logodesign, content: <Firstcompany /> },
+    { imgSrc: loremippsum, content: <Firstcompany />  },
 
 
   
-        </Col>
-  </Row>
-</Container> */}
+  ];
 
-<div>
-  <h3 className='fw-bolder text-center' style={{marginTop:'70px'}}>Companies</h3>
-</div>
-        <Row className="g-4 mt-2">
-          {/* Card 1 */}
-          <Col md={3} className="mb-4">
-          <img src={culture} alt="" className="mt-4" />
-          </Col>
+  const [hoveredIndex1, setHoveredIndex1] = useState(null); // For the first set of rows
+  const [hoveredIndex2, setHoveredIndex2] = useState(null); // For the second set of rows
 
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
 
-          {/* Card 2 */}
-          <Col md={3} className="mb-4">
-          <img src={yourbrand} alt="" className="mt-4" />
-          </Col>
+  // Ensure all cards are included by slicing the entire array
+  const currentCards = cards.slice(0, cards.length);
 
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
+  const paginationItems = [];
+  for (let number = 1; number <= Math.ceil(currentCards.length / cardsPerPage); number++) {
+    paginationItems.push(
+      <Pagination.Item
+        key={number}
+        active={number === currentPage}
+        onClick={() => paginate(number)}
+      >
+        {number}
+      </Pagination.Item>,
+    );
+  }
 
-          {/* Card 3 */}
-          <Col md={3} className="mb-4">
-          <img src={logodesign} alt="" className="mt-4" />
-          </Col>
-
-            {/* Card 4 */}
-          <Col md={3} className="mb-4">
-          <img src={loremippsum} alt="" className="mt-4" />
-
-          </Col>
-        </Row>
-
-        <Row className="g-2 ">
-          {/* Card 1 */}
-          <Col md={3} className="mb-4">
-          <img src={culture} alt="" className="mt-4" />
-          </Col>
-
-
-          {/* Card 2 */}
-          <Col md={3} className="mb-4">
-          <img src={yourbrand} alt="" className="mt-4" />
-          </Col>
-
-
-
-          {/* Card 3 */}
-          <Col md={3} className="mb-4">
-          <img src={logodesign} alt="" className="mt-4" />
-          </Col>
-
-            {/* Card 4 */}
-          <Col md={3} className="mb-4">
-          <img src={loremippsum} alt="" className="mt-4" />
-
-          </Col>
-        </Row>
-
-       
-        <Row className="g-2 ">
-          {/* Card 1 */}
-          <Col md={3} className="mb-4">
-          <img src={culture} alt="" className="mt-4" />
-          </Col>
-
-
-          {/* Card 2 */}
-          <Col md={3} className="mb-4">
-          <img src={yourbrand} alt="" className="mt-4" />
-          </Col>
-
-
-
-          {/* Card 3 */}
-          <Col md={3} className="mb-4">
-          <img src={logodesign} alt="" className="mt-4" />
-          </Col>
-
-            {/* Card 4 */}
-          <Col md={3} className="mb-4">
-          <img src={loremippsum} alt="" className="mt-4" />
-
-          </Col>
-        </Row>
-
+  return (
+    <Container>
+      <div className='text-center my-5 p-5 mt-2'>
+        <h3 className='fw-bolder'>Igniting Innovation, One<br/> Venture at a Time</h3>
+        <p className='mt-3'>Welcome to our diverse and dynamic portfolio of startups. Each one of 
+          these visionary<br/> ventures represents the essence of innovation, resilience, 
+          and the pursuit of<br/> excellence. We are dedicated in funding Pre-Seed 
+          to Series A in Health tech, Edtech,<br/> Enterprise SaaS, Agri-Tech, Food Security,
+          Green Energy and Financial Services. </p>
+      </div>
+      <Container>
+        <div className='w-100'>
+          <img
+            src={fourthhsvg}
+            alt=""
+            className=""
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
       </Container>
-    </div>
+
+      <div>
+        <p>With over 25,000 customers worldwide, Appex is the world leading analytics and marketing suite for Instagram and a 
+          partner of the world's most-loved brands such as National Geographic, Gucci, Marc Jacobs, Samsung, Emirates and more.</p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur 
+        </p>
+      </div>
+
+      <div>
+        {/* First set of rows */}
+        <Row className="g-4 mt-2">
+          {currentCards.slice(0, 4).map((card, index) => (
+            <Col
+              md={3}
+              className="mb-4"
+              key={index}
+              style={{
+                cursor: 'pointer',
+                boxShadow:
+                  selectedCard === cards[index]
+                    ? '0 4px 12px rgba(0, 0, 0, 0.2)' // Active clicked item
+                    : hoveredIndex1 === index
+                    ? '0 4px 12px rgba(0, 0, 0, 0.2)' // Hovered item
+                    : 'none',
+                transition: 'box-shadow 0.3s',
+              }}
+              onMouseEnter={() => setHoveredIndex1(index)}
+              onMouseLeave={() => setHoveredIndex1(null)}
+              onClick={() => handleCardClick(index)}
+            >
+              <img
+                src={card.imgSrc}
+                alt={`Card ${index + 1}`}
+              />
+            </Col>
+          ))}
+        </Row>
+
+        {/* Second set of rows */}
+        <Row className="g-4 mt-2">
+          {currentCards.slice(4, 8).map((card, index) => (
+            <Col
+              md={3}
+              className="mb-4"
+              key={index}
+              style={{
+                cursor: 'pointer',
+                boxShadow:
+                  selectedCard === cards[index + 4]
+                    ? '0 4px 12px rgba(0, 0, 0, 0.2)' // Active clicked item
+                    : hoveredIndex2 === index
+                    ? '0 4px 12px rgba(0, 0, 0, 0.2)' // Hovered item
+                    : 'none',
+                transition: 'box-shadow 0.3s',
+              }}
+              onMouseEnter={() => setHoveredIndex2(index)}
+              onMouseLeave={() => setHoveredIndex2(null)}
+              onClick={() => handleCardClick(index + 4)}
+            >
+              <img
+                src={card.imgSrc}
+                alt={`Card ${index + 1}`}
+              />
+            </Col>
+          ))}
+        </Row>
+
+        <div className='w-75' style={{ marginLeft: 'auto' }}>
+          {selectedCard && (
+            <div 
+              style={{
+                top: '50%',
+                left: '50%',
+                transform: 'translateY(-100%)',
+                transition: 'transform 0.5s ease-in-out',
+                transform: isSlidingIn ? 'translateX(-50%)' : 'translateY(-70%)',
+                backgroundColor: '#ffffff',
+                padding: '20px',
+                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+                zIndex: '9999',
+              }}
+            >
+              <button
+                onClick={() => setSelectedCard(null)}
+                style={{
+                  border: 'none',
+                  background: 'none',
+                  padding: '0',
+                  float: 'right',
+                }}
+              >
+                <img 
+                  src={closex} 
+                  alt="" 
+                  className="border-none" 
+                  style={{
+                    border: 'none',
+                    marginRight: '10px',
+                  }} 
+                />
+              </button>
+              <p 
+                className="fw-bolder" 
+                style={{
+                  fontSize: '20px',
+                }}
+              >
+                {selectedCard.content}
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="mt-4">
+          <Pagination>{paginationItems}</Pagination>
+        </div>
+      </div>
+    </Container>
   );
 }
 
 export default Cards;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

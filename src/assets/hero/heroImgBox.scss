@@ -1,0 +1,119 @@
+@import "./scss/media-queries";
+@import "./scss/extends";
+@import "./scss/mixims";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.heroImgBox {
+  width: 37.17606rem;
+  height: 29.2565rem;
+  //   border: 1px solid red;
+  position: relative;
+  right: 110px;
+  @include image("./virtual-office-boy 1.svg");
+  background-size: 80%;
+  z-index: 0;
+  .Card {
+    width: 19.25rem;
+    display: inline-flex;
+    height: 15rem;
+    padding: var(--16, 1rem);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--8, 0.5rem);
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 1;
+    border-radius: var(--8, 0.5rem);
+    background: #fbfbfb;
+    right: 20.44rem;
+    top: 20.2rem;
+    .line1 {
+      display: flex;
+      width: 17.25rem;
+      align-items: center;
+      gap: var(--16, 1rem);
+      .title {
+        color: var(--dark-color-dark-2, #6b7588);
+        font-family: Inter;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.03375rem;
+      }
+    }
+    .line2 {
+      margin-top: 1.06rem;
+      width: 11.125rem;
+      height: 3.652rem;
+      @include flex_col();
+      text-align: center;
+      .num {
+        color: var(--dark-color-dark-1, #3a3a3c);
+        font-family: Inter;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.06rem;
+      }
+      .gray {
+        margin-top: 0.31rem;
+        color: var(--dark-color-dark-3, #8f90a6);
+        font-family: Inter;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.02438rem;
+      }
+    }
+    .line3 {
+      @include flex_col();
+      margin-top: 1.7rem;
+      width: 13.42531rem;
+      height: 3.09494rem;
+      border-radius: 0.625rem;
+      background: var(--brand-color-lighter, #fbe492);
+      text-align: center;
+      padding: 0.58rem 0rem;
+      .num2 {
+        color: var(--dark-color-dark-1, #3a3a3c);
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02rem;
+      }
+      .text {
+        color: var(--dark-color-dark-2, #6b7588);
+        font-family: Inter;
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: -0.0125rem;
+      }
+    }
+  }
+  .Card1 {
+    position: absolute;
+    top: 5.07rem;
+    right: 1.13rem;
+    z-index: 1;
+    width: 10.5rem;
+    height: 7.875rem;
+    border-radius: var(--8, 0.5rem);
+    background: var(--white-100, #fff);
+    margin: auto;
+    img {
+      width: 7.5rem;
+      height: 5.625rem;
+    }
+  }
+}

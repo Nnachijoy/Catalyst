@@ -49,6 +49,8 @@ import LoginAdmin from "./Component/LoginAdmin";
 import Details from "./Component/Details";
 import Approvedpitch from "./Component/Approvedpitch";
 import Applicationn from "./Component/Applicationn";
+import Firstcompany from "./Component/Firstcompany";
+
 // import ActivateEmailPage from "./pages/active/[slug]";
 import RestPasswordPage from "./pages/resetPasswordPage/[slug]";
 import {
@@ -119,6 +121,8 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/applicationn" element={<Applicationn />} />
         <Route path="/approvedpitch" element={<Approvedpitch />} />
+        <Route path="/firstcompany" element={<Firstcompany />} />
+       
       </Routes>
       <Footer />
 

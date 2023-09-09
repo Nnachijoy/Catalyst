@@ -108,7 +108,7 @@ function DB() {
     <Container fluid className='mt-3'>
       <Row>
         <Col xs={12} sm={2} className={`sidebar ${sidebarOpen ? 'open' : ''}`} style={{ backgroundColor: 'white' }}>
-        <ListGroup>
+        {/* <ListGroup>
   {sidebarItems.map((item) => (
     <ListGroup.Item
       key={item.id}
@@ -170,9 +170,9 @@ function DB() {
   ))}
   
   
-</ListGroup>
+</ListGroup> */}
 
-       {/* <Mysidebar/> */}
+       <Mysidebar/>
 
           
         </Col>

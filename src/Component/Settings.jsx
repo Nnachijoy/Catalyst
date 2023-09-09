@@ -430,13 +430,22 @@ Chinweike
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto fw-bold px-3">
-              <Nav.Link onClick={() => setSelectedContent('overview')} className="home me-5" style={{ color: '#7C6512' }}>
-               Profile Details
-              </Nav.Link>
          
-              <Nav.Link onClick={() => setSelectedContent('security&privacy')} className="me-5">
+            <Nav.Link
+              onClick={() => { setSelectedContent('overview'); redir("/") }}
+              className={`me-5`}
+              style={{ color: selectedContent === 'overview' ? '#7C6512' : '' }}
+            >
+              Profile Details
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => { setSelectedContent('security&privacy'); redir("/security") }}
+              className={`me-5`}
+              style={{ color: selectedContent === 'security&privacy' ? '#7C6512' : '' }}
+            >
               Security & Privacy
-              </Nav.Link>
+            </Nav.Link>
             
           
             </Nav>
