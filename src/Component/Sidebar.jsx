@@ -7,7 +7,7 @@ const Sidebar = ({ onSidebarItemClick, onSidebarToggle }) => {
   const [selectedItem, setSelectedItem] = useState('overview'); // Set 'overview' as default selected item
 
   const sidebarItems = [
-    { label: 'Your Startup', icon: <FaCheckCircle className='mt-2' style={{ color: selectedItem === 'overview' ? 'yellow' : 'gray'}} />, content: 'overview' },
+    { label: 'Your Startup', icon: <FaCheckCircle className='mt-1' style={{ color: selectedItem === 'overview' ? 'yellow' : 'gray'}} />, content: 'overview' },
     { label: 'Your Team', icon: <FaCheckCircle  className='mt-2'  style={{ color: selectedItem === 'analytics' ? 'yellow' : 'gray' }} />, content: 'analytics' },
     { label: 'Your Vision', icon: <FaCheckCircle  className='mt-2'  style={{ color: selectedItem === 'reports' ? 'yellow' : 'gray' }} />, content: 'reports' },
 

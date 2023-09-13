@@ -1,24 +1,29 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
 body {
   font-family: 'Inter';
  
  
-}
+} */
 
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
   font-family: 'Montserrat';
+
+} 
+/* 
+h1, h2, h3, h4, h5{
+  font-size: 20px !important;
 } */
+
 
 .hero-h1{
 
 
 
- font-family: 'inter';
+ font-family: 'Inter';
 font-size: 50px;
 font-weight: 900;
 line-height: 67px;

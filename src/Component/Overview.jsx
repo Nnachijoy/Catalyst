@@ -140,8 +140,10 @@ const Overview = ({ onNext, onPrevious }) => {
         display: 'flex',
         alignItems: 'center',
       });
+      
     } else {
       setConsumerButtonStyle({
+  
         background: '#FEF4D3',
         border: 'none',
         transition: 'background 0.3s',
@@ -324,6 +326,18 @@ const Overview = ({ onNext, onPrevious }) => {
                 style={
                   energyButtonToggle1
                     ? {
+                        background:'#F8CA25',
+                        border: 'none',
+                        transition: 'background 0.3s',
+                        textTransform: 'none',
+                        boxShadow: 'none',
+                        fontSize: '17px',
+                        color: '#FFFFFF',
+                        borderRadius: '20px',
+                        display: 'flex',
+                        alignItems: 'center',
+                      }
+                    : {
                         background: '#FEF4D3',
                         border: 'none',
                         transition: 'background 0.3s',
@@ -335,22 +349,10 @@ const Overview = ({ onNext, onPrevious }) => {
                         display: 'flex',
                         alignItems: 'center',
                       }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
                 }
                 onClick={handleEnergyButtonClick1}
               >
-                <MDBIcon icon={energyButtonToggle1 ? 'plus' : 'check'} className="me-1" />
+                <MDBIcon icon={energyButtonToggle1 ? 'check' : 'plus'} className="me-1" />
                 Energy
               </Button>
             </Col>
@@ -361,35 +363,35 @@ const Overview = ({ onNext, onPrevious }) => {
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle2
-                    ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                    ?  {  
+                   background:'#F8CA25',
+                    border: 'none',
+                    transition: 'background 0.3s',
+                    textTransform: 'none',
+                    boxShadow: 'none',
+                    fontSize: '17px',
+                    color: '#FFFFFF',
+                    borderRadius: '20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                  }
+                : {
+                    background: '#FEF4D3',
+                    border: 'none',
+                    transition: 'background 0.3s',
+                    textTransform: 'none',
+                    boxShadow: 'none',
+                    fontSize: '17px',
+                    color: '#F8CA25',
+                    borderRadius: '20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                  }
                 }
                 onClick={handleEnergyButtonClick2}
               >
-                <MDBIcon icon={energyButtonToggle2 ? 'plus' : 'check'} className="me-1" />
-                Energy
+                <MDBIcon icon={energyButtonToggle2 ? 'check' : 'plus'} className="me-1" />
+                Health
               </Button>
             </Col>
   
@@ -404,34 +406,34 @@ const Overview = ({ onNext, onPrevious }) => {
                 style={
                   energyButtonToggle3
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick3}
               >
-                <MDBIcon icon={energyButtonToggle3 ? 'plus' : 'check'} className="me-1" />
-                Energy
+                <MDBIcon icon={energyButtonToggle3 ? 'check' : 'plus'} className="me-1" />
+                Edutech
               </Button>
             </Col>
 
@@ -443,34 +445,34 @@ const Overview = ({ onNext, onPrevious }) => {
                 style={
                   energyButtonToggle4
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick4}
               >
-                <MDBIcon icon={energyButtonToggle4 ? 'plus' : 'check'} className="me-1" />
-                Energy
+                <MDBIcon icon={energyButtonToggle4 ? 'check' : 'plus'} className="me-1" />
+                Fintech
               </Button>
             </Col>
   
@@ -481,125 +483,125 @@ const Overview = ({ onNext, onPrevious }) => {
   
             <Row className="mt-2 my-2">
        
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle5
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick5}
               >
-                <MDBIcon icon={energyButtonToggle5 ? 'plus' : 'check'} className="me-1" />
-                Energy
+                <MDBIcon icon={energyButtonToggle5 ? 'check' : 'plus'} className="me-1" />
+                Real Estate
               </Button>
             </Col>
   
   
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle6
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick6}
               >
-                <MDBIcon icon={energyButtonToggle6 ? 'plus' : 'check'} className="me-1" />
-                Energy
+                <MDBIcon icon={energyButtonToggle6 ? 'check' : 'plus'} className="me-1" />
+                Ecommerce
               </Button>
             </Col>
 
 
 
 
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle7
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick7}
               >
-                <MDBIcon icon={energyButtonToggle7 ? 'plus' : 'check'} className="me-2" />
-                Energy
+                <MDBIcon icon={energyButtonToggle7 ? 'check' : 'plus'} className="me-2" />
+                Agritech
               </Button>
             </Col>
 
 
 
 
-            <Col xs={12} sm={6} md={3}>
+            {/* <Col xs={12} sm={6} md={3}>
               <Button
                 className="mt-3 btn-sm"
                 style={
@@ -634,7 +636,7 @@ const Overview = ({ onNext, onPrevious }) => {
                 <MDBIcon icon={energyButtonToggle8 ? 'plus' : 'check'} className="me-2" />
                 Energy
               </Button>
-            </Col>
+            </Col> */}
   
             </Row>
 

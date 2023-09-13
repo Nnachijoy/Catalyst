@@ -333,77 +333,77 @@ style={{ textDecoration: 'none' }}
         <MDBCol xs={12} md={6}>
               <h6 className='fw-bolder'>What industry vertical does your startup operate in?</h6>
             <Row className="mt-2 my-2">
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle1
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick1}
               >
-                <MDBIcon icon={energyButtonToggle1 ? 'plus' : 'check'} className="me-1" />
+                <MDBIcon icon={energyButtonToggle1 ? 'check' : 'plus'} className="me-2" />
                 Energy
               </Button>
             </Col>
   
   
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle2
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick2}
               >
-                <MDBIcon icon={energyButtonToggle2 ? 'plus' : 'check'} className="me-1" />
+                <MDBIcon icon={energyButtonToggle2 ? 'check' : 'plus'} className="me-2" />
                 Health
               </Button>
             </Col>
@@ -413,46 +413,46 @@ style={{ textDecoration: 'none' }}
             
            
   
-            <Col xs={12} sm={6} md={3}>
+            <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
                   energyButtonToggle3
                     ? {
-                        background: '#FEF4D3',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#F8CA25',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
-                    : {
-                        background: '#F8CA25',
-                        border: 'none',
-                        transition: 'background 0.3s',
-                        textTransform: 'none',
-                        boxShadow: 'none',
-                        fontSize: '17px',
-                        color: '#FFFFFF',
-                        borderRadius: '20px',
-                        display: 'flex',
-                        alignItems: 'center',
-                      }
+                      background:'#F8CA25',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#FFFFFF',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
+                  : {
+                      background: '#FEF4D3',
+                      border: 'none',
+                      transition: 'background 0.3s',
+                      textTransform: 'none',
+                      boxShadow: 'none',
+                      fontSize: '17px',
+                      color: '#F8CA25',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }
                 }
                 onClick={handleEnergyButtonClick3}
               >
-                <MDBIcon icon={energyButtonToggle3 ? 'plus' : 'check'} className="me-1" />
-                Education
+                <MDBIcon icon={energyButtonToggle3 ? 'check' : 'plus'} className="me-2" />
+                Edutech
               </Button>
             </Col>
 
 
 
-             <Col xs={12} sm={6} md={3}>
+             {/* <Col xs={12} sm={6} md={3}>
               <Button
                 className="mt-3 btn-sm"
                 style={
@@ -487,13 +487,13 @@ style={{ textDecoration: 'none' }}
                 <MDBIcon icon={energyButtonToggle4 ? 'plus' : 'check'} className="me-1" />
                 Fintech
               </Button>
-            </Col>
+            </Col> */}
   
             </Row>
   
   
   
-  
+{/*   
             <Row className="mt-2 my-2">
        
             <Col xs={12} sm={6} md={4}>
@@ -613,7 +613,7 @@ style={{ textDecoration: 'none' }}
 
 
 
-            </Row>
+            </Row> */}
 
   
           </MDBCol>

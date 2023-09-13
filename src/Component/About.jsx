@@ -8,6 +8,7 @@ import firstcard from "../assets/firstcard.png";
 import secondcard from "../assets/secondcard.png";
 import thirdcard from "../assets/thirdcard.png";
 import Seventhsection from "./Seventhsection"
+import { Link } from 'react-router-dom'; 
 
 
 
@@ -21,18 +22,22 @@ const CardExample = () => {
         sed do eiusmod tempor<br/>
             incididunt ut labore Lorem ipsum dolor sit amet,
              consectetur adipiscing elit, sed do<br/> eiusmod tempor incididunt ut labore </p>
-             <Button
-  className='mt-3 text-white'
-  style={{
-    background: "#F8CA25",
-    border: "none",
-    boxShadow: "none",
-    fontSize: "18px", // Adding font-size of 18px
-    textTransform: "none", 
-  }}
->
-  Contact Us
-</Button>
+        
+
+<Link to="/contactus">
+  <button
+    className='mt-3 text-white p-2'
+    style={{
+      background: "#F8CA25",
+      border: "none",
+      boxShadow: "none",
+      fontSize: "18px", // Adding font-size of 18px
+      textTransform: "none", 
+    }}
+  >
+ Contact Us
+  </button>
+</Link>
     </div>
       
       <Row className='mt-5 p-4'>

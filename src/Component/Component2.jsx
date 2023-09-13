@@ -17,8 +17,8 @@ function Component2() {
 
 
 
-      <Container  className='p-5' > 
-      <div className='p-3' style={{ backgroundColor: 'white', minHeight: '30vh' }}>
+      <Container  className='p-3' > 
+      <div className='p-1' style={{ backgroundColor: 'white', minHeight: '30vh' }}>
      
      <div className='p-5' >
      <Row >
@@ -85,7 +85,7 @@ function Component2() {
 
 
 
-    <Container  className='p-5' > 
+    <Container  className='p-3' > 
       <div className='p-3' style={{ backgroundColor: 'white', minHeight: '30vh' }}>
      
      <div className='p-5' >

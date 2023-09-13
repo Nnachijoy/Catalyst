@@ -20,6 +20,7 @@ import Instagramdb from '../assets/instagramdb.png';
 import Linkedindb from '../assets/linkedindb.png';
 import Twitterdb from '../assets/twitterdb.png';
 import Discorddb from '../assets/Discorddb.png';
+import nolink from '../assets/nolink.png';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import {
@@ -160,6 +161,10 @@ const [inputValue3, setInputValue3] = useState('https://twitter.com/helenchiweik
 const [isEditing4, setIsEditing4] = useState(false);
 const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweike');
 
+
+const [isEditing5, setIsEditing5] = useState(false);
+const [inputValue5, setInputValue5] = useState('https://www.thread.com/');
+
   const handleEditClick = () => {
     setIsEditing(true);
   };
@@ -174,6 +179,10 @@ const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweik
   };
   const handleEditClick4 = () => {
     setIsEditing4(true);
+  };
+
+  const handleEditClick5 = () => {
+    setIsEditing5(true);
   };
 
 
@@ -199,6 +208,10 @@ const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweik
     setInputValue(e.target.value);
   };
 
+  const handleInputChange5 = (e) => {
+    setInputValue(e.target.value);
+  };
+
   const handleSaveClick = () => {
     setIsEditing(false);
     // Add code to handle saving the input value
@@ -219,6 +232,11 @@ const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweik
     const handleSaveClick4 = () => {
       setIsEditing4(false);
    };
+
+
+   const handleSaveClick5 = () => {
+    setIsEditing5(false);
+ };
 
   const [switches, setSwitches] = useState({
     switch1: false,
@@ -709,7 +727,7 @@ const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweik
         {isEditing4 ? (
           <input className='w-100 p-2 '
             type="text"
-            value={inputValue2}
+            value={inputValue4}
             onChange={handleInputChange4}
             style={{ border: 'none', outline: 'none'}}
           />
@@ -739,6 +757,57 @@ const [inputValue4, setInputValue4] = useState('https://discord.com/helenchiweik
 
 <button className=''
   onClick={handleSaveClick4} 
+  style={{
+    borderRadius: '3px',
+    padding: '10px 20px',
+    backgroundColor: '#F8CA25',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+>
+  Save
+</button>
+      
+      </div>
+    </div>
+
+    <div style={{ display: 'flex', alignItems: 'center' }} className='mt-4'>
+      <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9', flex: 11,
+       display: 'flex', alignItems: 'center', color:'#C7C9D9' }}>
+        <img src={nolink} alt="Section Image" className="img-fluid mb-0 me-2" />
+        {isEditing5 ? (
+          <input className='w-100 p-2 '
+            type="text"
+            value={inputValue5}
+            onChange={handleInputChange5}
+            style={{ border: 'none', outline: 'none'}}
+          />
+        ) : (
+          <div>
+            {inputValue5}
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', flex: 1,  marginLeft: '10px'  }} className=''>
+      <button  className='me-3'
+  onClick={handleEditClick5} 
+  style={{
+    marginRight: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    color:'#6B7588',
+   fontSize:'16px'
+  }}
+>
+  Edit
+</button>
+       
+
+
+<button className=''
+  onClick={handleSaveClick5} 
   style={{
     borderRadius: '3px',
     padding: '10px 20px',

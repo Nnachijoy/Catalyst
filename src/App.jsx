@@ -48,8 +48,10 @@ import Component6 from "./Component/Component6";
 import LoginAdmin from "./Component/LoginAdmin";
 import Details from "./Component/Details";
 import Approvedpitch from "./Component/Approvedpitch";
+import Rejectpitch from "./Component/Rejectpitch";
 import Applicationn from "./Component/Applicationn";
 import Firstcompany from "./Component/Firstcompany";
+import Inprogress from "./Component/Inprogress";
 
 // import ActivateEmailPage from "./pages/active/[slug]";
 import RestPasswordPage from "./pages/resetPasswordPage/[slug]";
@@ -78,7 +80,6 @@ function App() {
         <Route path="/blogg" element={<Blogg />} />
         <Route path="/numbertwo" element={<Numbertwo />} />
         <Route path="/numberthree" element={<Numberthree />} />
-
         <Route path="/comment" element={<Comment />} />
         <Route path="/commenttwo" element={<Commenttwo />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -108,7 +109,6 @@ function App() {
         <Route path="/reviewdetails" element={<Reviewdetails />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/investmentdb" element={<InvMainDb />} />
-
         <Route path="/resetemail" element={<Resetemail />} />
         <Route path="/component1" element={<Component1 />} />
         <Route path="/component2" element={<Component2 />} />
@@ -121,14 +121,23 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/applicationn" element={<Applicationn />} />
         <Route path="/approvedpitch" element={<Approvedpitch />} />
+        <Route path="/rejectpitch" element={<Rejectpitch />} />
         <Route path="/firstcompany" element={<Firstcompany />} />
-       
+        <Route path="/inprogress" element={<Inprogress />} />
       </Routes>
-      <Footer />
+      {!(["/maindb", "/superdash", "/login", "/email", "/signup",
+       "/resetpassword", "/inprogress", "/firstcompany", "/rejectcompany", 
+      "/rejectpitch", "/approvedpitch", "/application", "/details",
+        "/loginadmin","/component6", "/component5", "/component4",
+      "/component3", "/component2","/component1", "/invmaindb", "faq", "reviewdetails",
+      "/documents", "/traction", "/teams", "/socialmedia", "/editdetails", "/new","/about", 
+      "/ourteam", "/portfolio", "/blog", "/resetpassword"].
+      includes(pathName.pathname)) && <Footer />} 
 
       <ToastContainer autoClose={5000} />
     </>
   );
+  
 }
 
 export default App;

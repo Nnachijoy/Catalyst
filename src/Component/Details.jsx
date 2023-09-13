@@ -337,11 +337,11 @@ const Editdetails = () => {
        */}
 
         <MDBRow  className=''>
-          <MDBCol xs={12} md={6}>
+          {/* <MDBCol xs={12} md={6}>
           
-          </MDBCol>
+          </MDBCol> */}
   
-          <MDBCol xs={12} md={6}>
+          {/* <MDBCol xs={12} md={6}>
           
 
             
@@ -387,23 +387,9 @@ const Editdetails = () => {
       Next
       </Button>
 
-     
 
-      {/* For mobile, apply different styles using media query */}
-      <style jsx>
-        {`
-          @media (max-width: 576px) {
-            .btn-sm {
-              /* Define your desired width for smaller devices */
-              width: 120px;
-            }
-          }
-        `}
-      </style>
     </div>
-            </MDBCol>
-
-            
+            </MDBCol> */}       
         </MDBRow>
           </div>
         );
@@ -641,9 +627,11 @@ const Editdetails = () => {
   </button>
 </Link>
 
-<button className=''
-  style={{
-    width: '186px', 
+<Link to="/rejectpitch">
+  <button
+    className=''
+    style={{
+      width: '186px', 
     padding: '15px',
     margin: '10px',
     backgroundColor: '#FF3B3B',
@@ -651,10 +639,11 @@ const Editdetails = () => {
     border: 'none',
     outline: 'none',
     fontSize:'18px',
-  }}
->
- Reject Pitch
-</button>
+    }}
+  >
+  Reject Pitch
+  </button>
+</Link>
              </div>
             
             );
@@ -910,25 +899,55 @@ Fintech
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => setSelectedContent('companyprofile')} className="home me-5" style={{ color: '#7C6512' }}>
-                Company Profile
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('socialmedia')} className="me-5">
-                Social Media
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('teams')} className="me-5">
-                Teams
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('vision')} className="me-5">
-                Vision
-              </Nav.Link>
-              <Nav.Link onClick={() => setSelectedContent('documents')} className="me-5">
-                Documents
-              </Nav.Link>
 
-              <Nav.Link onClick={() => setSelectedContent('comment')} className="me-5">
-                Comment
-              </Nav.Link>
+            <Nav.Link
+              onClick={() => { setSelectedContent('companyprofile'); redir("/companyprofile") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'companyprofile' ? '#7C6512' : '' }}
+            >
+                   Company Profile
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => { setSelectedContent('socialmedia'); redir("/socialmedia") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'socialmedia' ? '#7C6512' : '' }}
+            >
+                  Social Media
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => { setSelectedContent('teams'); redir("/teams") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'teams' ? '#7C6512' : '' }}
+            >
+                 Teams
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => { setSelectedContent('vision'); redir("/vision") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'vision' ? '#7C6512' : '' }}
+            >
+                 Vision
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => { setSelectedContent('documents'); redir("/documents") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'documents' ? '#7C6512' : '' }}
+            >
+                 Documents
+            </Nav.Link>
+
+
+              <Nav.Link
+              onClick={() => { setSelectedContent('comment'); redir("/comment") }}
+              className={`me-5 fw-bolder`}
+              style={{ color: selectedContent === 'comment' ? '#7C6512' : '' }}
+            >
+                 Comment
+            </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -154,7 +154,7 @@ const Hero = () => {
               <div>
                 <div className="mt-5 w-50 w-md-auto">
                   <Row className="align-items-center custom-row">
-                    <Col xs={12} sm={12} md={4} className="mb-0">
+                    <Col xs={12} sm={12} md={3} className="mb-0">
                       <h6 className="fw-bolder">${amountRaised.toFixed(1)}K</h6>
                       <p
                         className="mb-0 fw-bolder"
@@ -164,13 +164,13 @@ const Hero = () => {
                       </p>
                     </Col>
 
-                    <Col xs={12} sm={1} md={0}>
+                    <Col xs={12} sm={1} md={1}>
                       <div className="d-flex" style={{ height: "70px" }}>
                         <div className="vr"></div>
                       </div>
                     </Col>
 
-                    <Col xs={12} sm={12} md={2} className="mb-0">
+                    <Col xs={12} sm={12} md={3} className="mb-0">
                       {/* <h6 className="fw-bolder">${minimum.toFixed(1)}K</h6> */}
                       <h6 className="fw-bolder">$1.6K</h6>
                       <p
@@ -181,7 +181,7 @@ const Hero = () => {
                       </p>
                     </Col>
 
-                    <Col xs={1} sm={1} md={0}>
+                    <Col xs={1} sm={1} md={1}>
                       <div className="d-flex" style={{ height: "70px" }}>
                         <div className="vr"></div>
                       </div>
@@ -214,7 +214,7 @@ const Hero = () => {
     <img src={bottomimg} alt="Bottom Image" className="img-fluid" />
   </div>
 </Col> */}
-          <Col md={4} className="slide-in">
+          <Col md={4} className="slide-in mb-5">
             <HeroImgBox />
           </Col>
         </Row>
