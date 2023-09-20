@@ -34,7 +34,7 @@ export default function App() {
       color: 'black',
       fontWeight:'bold',
       borderRadius: '20px',
-      padding: '10px 15px',
+      padding: '5px 10px',
       boxShadow:'none',
       fontSize:'14px',
       textTransform: 'none',
