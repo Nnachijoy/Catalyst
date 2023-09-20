@@ -35,8 +35,11 @@ import  {NavLink} from "react-router-dom"
 import dashboard2 from "../assets/dashboard2.png";
 
 
+
 const Analytics = ({ onNext, onPrevious }) => {
   const [pageNumber, setPageNumber] = useState(1);
+
+ 
 
   const handleNext = () => {
     onNext();
@@ -48,12 +51,45 @@ const Analytics = ({ onNext, onPrevious }) => {
     setPageNumber(pageNumber - 1);
   };
 
-  const [selectedLanguage, setSelectedLanguage] = useState('');
+  const [selectedFile, setSelectedFile] = useState(null);
+  const fileInputRef = useRef(null);
 
-  const handleLanguageChange = (event) => {
-    setSelectedLanguage(event.target.value);
+  // Function to handle file selection
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+    alert(`Selected File: ${file.name}`);
   };
 
+  // Function to handle file drop
+  const handleFileDrop = (e) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files[0];
+    setSelectedFile(file);
+    alert(`Selected File: ${file.name}`);
+  };
+
+  // Function to handle the "Edit Image" button click
+  const handleEditImageClick = () => {
+    fileInputRef.current.click();
+  };
+
+  // Function to remove the selected file
+  const handleRemoveFile = () => {
+    setSelectedFile(null);
+  };
+
+  // Prevent the default behavior for drag-and-drop
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+
+    const [selectedLanguage, setSelectedLanguage] = useState('');
+
+    const handleLanguageChange = (event) => {
+      setSelectedLanguage(event.target.value);
+    };
 
 
   const [energyButtonStyle, setEnergyButtonStyle] = useState({
@@ -371,7 +407,106 @@ const Analytics = ({ onNext, onPrevious }) => {
      </MDBCol>
       </MDBRow>
 
+      <MDBRow>
+      <MDBCol>
+      <div className="mb-5">
+        <label className="text-black fw-bold">Upload your company logo</label>
+  
+        <div
+          style={{
+            border: '2px dashed #ccc',
+            padding: '1rem',
+            borderRadius: '10px',
+            height: '230px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            overflow: 'hidden', // To ensure the content does not exceed the container boundaries
+          }}
+          className="mt-4"
+          onDrop={handleFileDrop}
+          onDragOver={handleDragOver}
+        >
+          {selectedFile ? (
+            <div style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative' }}>
+              {selectedFile.type.startsWith('image/') ? (
+                <img
+                  src={URL.createObjectURL(selectedFile)} // Use URL.createObjectURL() to create a temporary URL
+                  alt="Selected File Preview"
+                  style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                />
+              ) : (
+                <div>
+                  <p>Selected File: {selectedFile.name}</p>
+                  <a href={URL.createObjectURL(selectedFile)} download>
+                    Download Document
+                  </a>
+                </div>
+              )}
+              <button
+                className="btn btn-danger"
+                onClick={handleRemoveFile}
+                style={{
+                  position: 'absolute',
+                  top: '100px',
+                  left: '70%',
+                  transform: 'translateX(-50%)',
+                }}
+              >
+                Remove
+              </button>
+            </div>
+          ) : (
+            <div
+              className="text-center"
+              onClick={() => fileInputRef.current.click()}
+              onDrop={handleFileDrop}
+              onDragOver={handleDragOver}
+            >
+              <img src={draganddrop} alt="" />
+              <p>
+                Select a file or drag and drop here
+                <br />
+                <span style={{ fontSize: '11px', color: '#C7C9D9' }}>
+                  JPG, PNG or PDF, file size no more than 10MB
+                </span>
+              </p>
+              <input
+                type="file"
+                ref={fileInputRef}
+                style={{ display: 'none' }}
+                onChange={handleFileChange}
+                accept=".jpg, .jpeg, .png, .pdf"
+              />
+              <label
+                className="btn btn-primary mt-3"
+                htmlFor="fileInput"
+                style={{
+                  background: 'none',
+                  border: '2px solid #F8CA25',
+                  transition: 'background 0.3s',
+                  textTransform: 'none',
+                  boxShadow: 'none',
+                  fontSize: '17px',
+                  color: '#F8CA25',
+                  cursor: 'pointer',
+                }}
+                onMouseEnter={(e) => (e.target.style.background = 'black')}
+                onMouseLeave={(e) => (e.target.style.background = 'none')}
+              >
+                Upload a photo
+              </label>
+            </div>
+          )}
+        </div>
+      </div>
+      </MDBCol>
 
+      <MDBCol>
+        {/* emptycol */}
+      </MDBCol>
+      </MDBRow>
      
       <div className="d-flex justify-content-end mt-5">
       <Button

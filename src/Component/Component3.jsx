@@ -26,12 +26,12 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
-  <NavLink to="/inprogress">
+  <NavLink to="/">
   <Button
-    className=""
+    className="fw-bolder"
     style={{
-      background: '#FEF4D3',
-      color: '#FFCC00',
+      background: '#F2F2F5',
+      color: 'black',
       fontWeight:'bold',
       borderRadius: '20px',
       padding: '10px 15px',
@@ -43,7 +43,7 @@ export default function App() {
       width:'8rem'
     }}
   >
-    In-progress
+    Edit
   </Button>
 </NavLink>
   </Col>
@@ -68,8 +68,6 @@ export default function App() {
 </div>
 
 
-
- 
       <Row className='mt-4'>
   <Col style={{ flex: '1' }}>
   <Button

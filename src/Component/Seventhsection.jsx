@@ -84,7 +84,8 @@ function Section() {
   return (
     <section>
       <div className="mt-5">
-        <div ref={sectionRef} className={`typewriter-animation ${isVisible ? 'active' : ''}`}>
+        <div>
+        {/* <div ref={sectionRef} className={`typewriter-animation ${isVisible ? 'active' : ''}`}> */}
           <img src={Seventhsection} alt="Section Image" className="img-fluid" />
         </div>
       </div>

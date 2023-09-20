@@ -29,7 +29,7 @@ import draganddrop from "../assets/draganddrop.png";
 import axios from 'axios';
 import  {NavLink} from "react-router-dom"
 import dashboard2 from "../assets/dashboard2.png";
-
+import pdfupload from "../assets/pdfupload.png";
 
 
 const Users = ({ onNext, onPrevious }) => {
@@ -295,77 +295,50 @@ style={{ textDecoration: 'none' }}
 
 
       <MDBRow>
-
         <MDBCol xs={12} md={6}>
           <div className="mb-4">
-            <Form.Label className="text-black fw-bold">Startup Name</Form.Label>
-            <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    Elitepath Innovation Hub
-</div>
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Company Name</div>
+            <div className='mt-2'> Elitepath Innovation Hub</div>
           </div>
         </MDBCol>
 
-      
-
-        
-
         <MDBCol xs={12} md={6}>
-          <div className="mb-4">
-            <Form.Label className="text-black fw-bold">Email Address</Form.Label>
-            <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    elitePath@gmail.com
-</div>
+        <div className="mb-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Email Address</div>
+            <div className='mt-2'>contact@elitepath.gmail.com</div>
           </div>
         </MDBCol>
       </MDBRow>
 
       <MDBRow className='mt-3'>
         <MDBCol xs={12} md={6}>
-          <div className="mt-3">
-            <Form.Label className="text-black fw-bold">Website</Form.Label>
-            <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    elitePathCompany.com
-</div>
-        
+        <div className="mb-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Website</div>
+            <div className='mt-2'>www.elitepath.com</div>
           </div>
         </MDBCol>
 
         <MDBCol xs={12} md={6}>
-              <h6 className='fw-bolder'>What industry vertical does your startup operate in?</h6>
-            <Row className="mt-2 my-2">
+              <h6 className='fw-bolder'  style={{color:'#7C6512', fontSize:'17px'}}>
+                What industry vertical does your startup operate in?</h6>
+            <Row className="mt-1 my-2">
             <Col xs={12} sm={6} md={4}>
               <Button
-                className="mt-3 btn-sm"
+                className="mt-3 btn-sm w-75 px-4"
                 style={
-                  energyButtonToggle1
-                    ? {
-                      background:'#F8CA25',
-                      border: 'none',
-                      transition: 'background 0.3s',
-                      textTransform: 'none',
-                      boxShadow: 'none',
-                      fontSize: '17px',
-                      color: '#FFFFFF',
-                      borderRadius: '20px',
-                      display: 'flex',
-                      alignItems: 'center',
+                   {
+                    background: '#F8CA25',
+                    border: 'none',
+                    transition: 'background 0.3s',
+                    textTransform: 'none',
+                    boxShadow: 'none',
+                    fontSize: '17px',
+                    color: '#FFFFFF',
+                    borderRadius: '20px',
+                    display: 'flex',
+                    alignItems: 'center',
                     }
-                  : {
-                      background: '#FEF4D3',
-                      border: 'none',
-                      transition: 'background 0.3s',
-                      textTransform: 'none',
-                      boxShadow: 'none',
-                      fontSize: '17px',
-                      color: '#F8CA25',
-                      borderRadius: '20px',
-                      display: 'flex',
-                      alignItems: 'center',
-                    }
-                }
-                onClick={handleEnergyButtonClick1}
-              >
-                <MDBIcon icon={energyButtonToggle1 ? 'check' : 'plus'} className="me-2" />
+                }>
                 Energy
               </Button>
             </Col>
@@ -373,11 +346,10 @@ style={{ textDecoration: 'none' }}
   
             <Col xs={12} sm={6} md={4}>
               <Button
-                className="mt-3 btn-sm"
+                className="mt-3 btn-sm w-75 px-4"
                 style={
-                  energyButtonToggle2
-                    ? {
-                      background:'#F8CA25',
+                     {
+                      background: '#F8CA25',
                       border: 'none',
                       transition: 'background 0.3s',
                       textTransform: 'none',
@@ -388,32 +360,13 @@ style={{ textDecoration: 'none' }}
                       display: 'flex',
                       alignItems: 'center',
                     }
-                  : {
-                      background: '#FEF4D3',
-                      border: 'none',
-                      transition: 'background 0.3s',
-                      textTransform: 'none',
-                      boxShadow: 'none',
-                      fontSize: '17px',
-                      color: '#F8CA25',
-                      borderRadius: '20px',
-                      display: 'flex',
-                      alignItems: 'center',
-                    }
                 }
-                onClick={handleEnergyButtonClick2}
               >
-                <MDBIcon icon={energyButtonToggle2 ? 'check' : 'plus'} className="me-2" />
-                Health
+                Fintech
               </Button>
             </Col>
   
-  
-  
-            
-           
-  
-            <Col xs={12} sm={6} md={4}>
+            {/* <Col xs={12} sm={6} md={4}>
               <Button
                 className="mt-3 btn-sm"
                 style={
@@ -448,9 +401,7 @@ style={{ textDecoration: 'none' }}
                 <MDBIcon icon={energyButtonToggle3 ? 'check' : 'plus'} className="me-2" />
                 Edutech
               </Button>
-            </Col>
-
-
+            </Col> */}
 
              {/* <Col xs={12} sm={6} md={3}>
               <Button
@@ -621,40 +572,34 @@ style={{ textDecoration: 'none' }}
 
       <MDBRow>
         <MDBCol xs={12} md={6}>
-          <div className="mt-5">
-            <Form.Label className="text-black fw-bold">Location</Form.Label>
-            <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Nigeria
+        <div className="mt-3">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Location</div>
+            <div className='mt-2'>PortHarcourt, Rivers State</div>
           </div>
+          <div className="mt-3">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Founding Date</div>
+            <div className='mt-2'>01 Sep, 2000</div>
           </div>
 
-          <div className="mt-5">
-            <Form.Label className="text-black fw-bold">Founding Date</Form.Label>
-            <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   22 Aug 2023
+          <div className="mt-3">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Are you currently generating revenue?</div>
+            <div className='mt-2'>Yes</div>
           </div>
+
+          <div className="mt-3">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>If yes, please specify your annual revenue</div>
+            <div className='mt-2'>$0 - $100k</div>
           </div>
-          {/* <div className="mb-4">
-            <Form.Label className="text-black fw-bold">What is the primary country of operation for your startup?</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your answer"
-              className=""
-              style={{ padding: '20px 32px', boxShadow: 'none' }}
-              required // Add required attribute
-            />
-          </div> */}
+ 
         </MDBCol>
 
         <MDBCol xs={12} md={6}>
-          <div className="mt-5">
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Label className="fw-bold text-black">Describe your startup in one sentence</Form.Label>
-              <div className='border-custom p-5' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing.
-</div>
-          
-            </Form.Group>
+        <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>Briefly describe your target market and customer segment</div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             </div>
           </div>
         </MDBCol>
       </MDBRow>
@@ -663,43 +608,29 @@ style={{ textDecoration: 'none' }}
        
     
         <MDBCol xs={12} md={6}>
-  
-<div>
-  <h6 className='fw-bold mt-5'>Are you currently generating revenue?</h6>
-  <label className="me-3"style={{ display: 'inline-block', marginRight: '10px' }}>
-    <input
-      type="radio"
-      name="fav_language"
-      value="Yes"
-      checked={selectedLanguage === 'Yes'}
-      onChange={handleLanguageChange}
-    />
-    Yes
-  </label>
-  <label style={{ display: 'inline-block' }}>
-    <input
-      type="radio"
-      name="fav_language"
-      value="No"
-      checked={selectedLanguage === 'No'}
-      onChange={handleLanguageChange}
-    />
-    No
-  </label>
-</div>
-       
-       </MDBCol>
-       
-        <MDBCol xs={12} md={6}>
-          <div className="mt-4">
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Label className="fw-bold text-black">
-              Briefly describe your target market and customer segment
-              </Form.Label>
-              <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            How did you hear about our program?
+            </div>
+            <div className='mt-2'>Referral</div>
           </div>
-            </Form.Group>
+          <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Team Size
+            </div>
+            <div className='mt-2'>5-10 Persons</div>
+          </div>
+       </MDBCol>
+     
+        <MDBCol xs={12} md={6}>
+        <div className="mb-5">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Describe the background and expertise of your team
+            </div>
+            <div className='mt-2'>
+            Lorem ipsum dolor sit amet, consectetur sed do eiusmod 
+            tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            </div>
           </div>
         </MDBCol>
         </MDBRow>
@@ -707,29 +638,24 @@ style={{ textDecoration: 'none' }}
         <MDBRow>
        
        <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">If yes, please specify your annual revenue</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    Lorem ipsum dolor sit amet.
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Key Team Members 
+            </div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur 
+            sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore </div>
           </div>
-           </Form.Group>
-         </div>
-
        
        </MDBCol>
       
        <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">How did you hear about our programme?</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    Lorem ipsum dolor sit amet.
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Have you received any previous funding or investment?
+            </div>
+            <div className='mt-2'>Yes</div>
           </div>
-           </Form.Group>
-         </div>
-
-       
        </MDBCol>
 
        </MDBRow>
@@ -738,39 +664,26 @@ style={{ textDecoration: 'none' }}
 <MDBRow className='mt-4'> 
        
 <MDBCol xs={12} md={6}>
-         
-         <div className="">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bolder text-black">Team Size</Form.Label>
-              <Form.Select aria-label="Select a reason" className=""
-       style={{ padding: '20px 32px', boxShadow: 'none' }}
-        
-       required>
-       <option value="option1">-Select Option-</option>
-       <option value="option2">Option 2</option>
-       <option value="option3">Option 3</option>
-       <option value="option3">Option 4</option>
-       {/* Add more options as needed */}
-     </Form.Select>
-           </Form.Group>
-         </div>
- 
-     
-   
+<div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            If yes, please specify the amount and source of funding
+            </div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, 
+             sed do eiusmod tempor incididunt ut labore </div>
+          </div>
          </MDBCol>
       
       
          <MDBCol xs={12} md={6}>
          <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">Describe the background and expertise of your team</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    Lorem ipsum dolor sit amet.
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Team Description
+            </div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, 
+             sed do eiusmod tempor incididunt ut labore </div>
           </div>
-           </Form.Group>
-         </div>
-
-       
        </MDBCol>
 
        </MDBRow>
@@ -779,56 +692,25 @@ style={{ textDecoration: 'none' }}
        <MDBRow>
        
        <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">Key Team Members </Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            What problem does your startup solve??
+            </div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur 
+            sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore  </div>
           </div>
-           </Form.Group>
-         </div>
-
-       
        </MDBCol>
       
        <MDBCol xs={12} md={6}>
-  
-  <div>
-    <h6 className='fw-bold mt-5'>Have you received any previous funding or investment?</h6>
-    <label className="me-3"style={{ display: 'inline-block', marginRight: '10px' }}>
-      <input
-        type="radio"
-        name="fav_language"
-        value="Yes"
-        checked={selectedLanguage === 'Yes'}
-        onChange={handleLanguageChange}
-      />
-      Yes
-    </label>
-    <label style={{ display: 'inline-block' }}>
-      <input
-        type="radio"
-        name="fav_language"
-        value="No"
-        checked={selectedLanguage === 'No'}
-        onChange={handleLanguageChange}
-      />
-      No
-    </label>
-  </div>
-
-  <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">If yes, please specify the amount and source of funding</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-    $100
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Describe your unique value proposition
+            </div>
+            <div className='mt-2'>Lorem ipsum dolor sit amet, consectetur sed do eiusmod
+             tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor 
+             incididunt ut labore  </div>
           </div>
-           </Form.Group>
-         </div>
-
-
-
-         
          </MDBCol>
 
        </MDBRow>
@@ -838,175 +720,79 @@ style={{ textDecoration: 'none' }}
        <MDBRow>
        
        <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">What problem does your startup solve?? </Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            What is your growth strategy?
+            </div>
+            <div className='mt-2'>
+            Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore 
+            </div>
           </div>
-           </Form.Group>
-         </div>
-
-       
        </MDBCol>
       
        <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">Describe your unique value proposition </Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
-          </div>
-           </Form.Group>
-         </div>
-
-       
-       </MDBCol>
-       </MDBRow>
-
-       <MDBRow>
-       
-       <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">What is your growth strategy?</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
-          </div>
-           </Form.Group>
-         </div>
-
-       
-       </MDBCol>
-      
-       <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">How do you plan to use the investment if selected? </Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
-          </div>
-           </Form.Group>
-         </div>
-
-       
-       </MDBCol>
-       </MDBRow>
-
-       <MDBRow>
-      <MDBCol xs={12} md={6} >
-          <div className="mt-3">
-        <label className="text-black fw-bold">Upload Pitch Deck</label>
-  
-        <div
-          style={{
-            border: '2px dashed #ccc',
-            padding: '1rem',
-            borderRadius: '10px',
-            height: '200px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            position: 'relative',
-            overflow: 'hidden', // To ensure the content does not exceed the container boundaries
-          }}
-          className="mt-4"
-          onDrop={handleFileDrop}
-          onDragOver={handleDragOver}
-        >
-          {selectedFile ? (
-            <div style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative' }}>
-              {selectedFile.type.startsWith('image/') ? (
-                <img
-                  src={URL.createObjectURL(selectedFile)} // Use URL.createObjectURL() to create a temporary URL
-                  alt="Selected File Preview"
-                  style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
-                />
-              ) : (
-                <div>
-                  <p>Selected File: {selectedFile.name}</p>
-                  <a href={URL.createObjectURL(selectedFile)} download>
-                    Download Document
-                  </a>
-                </div>
-              )}
-              <button
-                className="btn btn-danger"
-                onClick={handleRemoveFile}
-                style={{
-                  position: 'absolute',
-                  top: '100px',
-                  left: '70%',
-                  transform: 'translateX(-50%)',
-                }}
-              >
-                Remove
-              </button>
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            File Uploaded
             </div>
-          ) : (
-            <div
-              className="text-center"
-              onClick={() => fileInputRef.current.click()}
-              onDrop={handleFileDrop}
-              onDragOver={handleDragOver}
-            >
-              <img src={draganddrop} alt="" />
-              <p>
-                Select a file or drag and drop here
-                <br />
-                <span style={{ fontSize: '11px', color: '#C7C9D9' }}>
-                  JPG, PNG or PDF, file size no more than 10MB
-                </span>
-              </p>
-              <input
-                type="file"
-                ref={fileInputRef}
-                style={{ display: 'none' }}
-                onChange={handleFileChange}
-                accept=".jpg, .jpeg, .png, .pdf"
-              />
-              <label
-                className="btn btn-primary mt-3"
-                htmlFor="fileInput"
-                style={{
-                  background: 'none',
-                  border: '2px solid #F8CA25',
-                  transition: 'background 0.3s',
-                  textTransform: 'none',
-                  boxShadow: 'none',
-                  fontSize: '17px',
-                  color: '#F8CA25',
-                  cursor: 'pointer',
-                }}
-                onMouseEnter={(e) => (e.target.style.background = 'black')}
-                onMouseLeave={(e) => (e.target.style.background = 'none')}
-              >
-                Select File
-              </label>
-            </div>
-          )}
-        </div>
-      </div>
-
-  
-           
             
-          </MDBCol>
-      
-       <MDBCol xs={12} md={6}>
-         <div className="mt-4">
-           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-             <Form.Label className="fw-bold text-black">Any additional comments or information you'd like to share?</Form.Label>
-             <div className='border-custom p-3' style={{ border: '1px solid #C7C9D9' }}>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur eius dignissimos optio aliquid numquam?
-          </div>
-           </Form.Group>
-         </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+  <div className='border-custom p-4 mt-2'
+    style={{
+      border: 'none',
+      flex: 11,
+      display: 'flex',
+      alignItems: 'center',
+      backgroundColor: '#FAFAFA'
+    }}
+  >
+    <div className='d-flex justify-content-between w-100'>
+      <div style={{ flexGrow: 1 }}>
+        <img src={pdfupload} /><span className='px-3'>Application Teams</span>
+      </div>
+      <div>
+       5.7MB
+      </div>
+    </div>
+  </div>
+</div>
 
-       
+          </div>
        </MDBCol>
        </MDBRow>
 
+       <MDBRow>
+       
+       <MDBCol xs={12} md={6}>
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            How do you plan to use the investment if selected?
+            </div>
+            <div className='mt-2'>
+            Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore 
+            </div>
+          </div>
+       </MDBCol>
+      
+       <MDBCol xs={12} md={6}>
+       <div className="mt-4">
+            <div className=" fw-bold" style={{color:'#7C6512', fontSize:'17px'}}>
+            Any additional comments or information you'd like to share?
+            </div>
+            <div className='mt-2'>
+            Lorem ipsum dolor sit amet, consectetur
+             sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+       </MDBCol>
+       </MDBRow>
+
+     
 
 
       <div className="d-flex justify-content-end mt-5">

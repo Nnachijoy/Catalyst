@@ -47,8 +47,8 @@ function MyNavBar() {
             >
               ContactUs
             </Nav.Link>
- 
-            {/* <Nav.Link
+{/*  
+            <Nav.Link
               onClick={() => { setSelectedLink("/maindb"); redir("/maindb") }}
               className={`me-4 ${selectedLink === "/maindb" ? 'text-warning' : ''} fw-bolder`}
             >
