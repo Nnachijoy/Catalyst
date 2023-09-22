@@ -269,7 +269,7 @@ function DB() {
                                 <div className=''>    
                                 <div>
                                                  
-                                                      Edit Profile
+                                                      Edit Company
                                                   
                                                        </div> 
                                          </div>

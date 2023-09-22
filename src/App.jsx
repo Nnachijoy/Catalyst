@@ -51,7 +51,7 @@ import Approvedpitch from "./Component/Approvedpitch";
 import Rejectpitch from "./Component/Rejectpitch";
 import Applicationn from "./Component/Applicationn";
 import Firstcompany from "./Component/Firstcompany";
-import Inprogress from "./Component/Inprogress";
+import Approved from "./Component/Approved";
 
 // import ActivateEmailPage from "./pages/active/[slug]";
 import RestPasswordPage from "./pages/resetPasswordPage/[slug]";
@@ -123,7 +123,7 @@ function App() {
         <Route path="/approvedpitch" element={<Approvedpitch />} />
         <Route path="/rejectpitch" element={<Rejectpitch />} />
         <Route path="/firstcompany" element={<Firstcompany />} />
-        <Route path="/inprogress" element={<Inprogress />} />
+        <Route path="/approved" element={<Approved />} />
       </Routes>
       {!(["/maindb", "/superdash", "/login", "/email", "/signup",
        "/resetpassword", "/inprogress", "/firstcompany", "/rejectcompany", 

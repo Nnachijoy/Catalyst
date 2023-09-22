@@ -26,7 +26,7 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
-  <NavLink to="/">
+  <NavLink to="/superdash">
   <Button
     className="fw-bolder"
     style={{
@@ -90,11 +90,15 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
+  <NavLink to="/inprogress" style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
   <img src={message} className='me-2' style={{ display: 'inline-block' }} />
-<span className='' style={{ display: 'inline-block' }}>0</span>
+  <span className='' style={{ display: 'inline-block' }}>0</span>
+</NavLink>
 
   </Col>
 </Row>
+
+
 
 
   </Container>
@@ -110,24 +114,26 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
+  <NavLink to="/approved">
   <Button
-      className=""
-      style={{
-        backgroundColor: '#F2FCF8',
-        color: '#06C270',
-        fontWeight:'bold',
-        borderRadius: '20px',
-        padding: '10px 15px',
-        boxShadow:'none',
-        fontSize:'14px',
-        textTransform: 'none',
-        lineHeight: '23.8px',
-        border:'none',
-        width:'8rem'
-      }}
-    >
-      Approved
-    </Button>
+    className=""
+    style={{
+      backgroundColor: '#F2FCF8',
+      color: '#06C270',
+      fontWeight:'bold',
+      borderRadius: '20px',
+      padding: '10px 15px',
+      boxShadow:'none',
+      fontSize:'14px',
+      textTransform: 'none',
+      lineHeight: '23.8px',
+      border:'none',
+      width:'8rem'
+    }}
+  >
+    Approved
+  </Button>
+</NavLink>
   </Col>
 </Row>
 
@@ -175,8 +181,10 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
+  <NavLink to="/inprogress" style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
   <img src={message} className='me-2' style={{ display: 'inline-block' }} />
-<span className='' style={{ display: 'inline-block' }}>3</span>
+  <span className='' style={{ display: 'inline-block' }}>3</span>
+</NavLink>
 
   </Col>
 </Row>
@@ -258,8 +266,10 @@ export default function App() {
   </Col>
 
   <Col style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
+  <NavLink to="/inprogress" style={{ textAlign: 'right', marginRight:'40px' }} className='mt-3'>
   <img src={message} className='me-2' style={{ display: 'inline-block' }} />
-<span className='' style={{ display: 'inline-block' }}>3</span>
+  <span className='' style={{ display: 'inline-block' }}>3</span>
+</NavLink>
 
   </Col>
 </Row>

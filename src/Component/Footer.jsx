@@ -3,7 +3,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 import catalystlogo from "../assets/catalystlogo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-
+import { NavLink } from 'react-router-dom';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookF, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -22,7 +22,7 @@ export default function App() {
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                
-                <img src={catalystlogo} alt="" />
+              <img src={catalystlogo} alt="" style={{ width: '230px', height: 'auto' }} />
               </h6>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -33,31 +33,45 @@ export default function App() {
             
               <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
   <h6 className='text-uppercase fw-bold mb-4' style={{ color: "#7C6512" }}>OUR PAGES</h6>
-  <p>
+  {/* <p>
     <a href='#!' className='custom-link-color text-decoration-none'>
       About
     </a>
-  </p>
-  <p>
-    <a href='#!' className='custom-link-color text-decoration-none'>
-      Portfolio
-    </a>
-  </p>
-  <p>
-    <a href='#!' className='custom-link-color text-decoration-none' >
-      Blog
-    </a>
-  </p>
-  <p>
-    <a href='#!' className='custom-link-color text-decoration-none' >
-      Our Team
-    </a>
-  </p>
-  <p>
-    <a href='#!' className='custom-link-color text-decoration-none' >
-      Contact Us
-    </a>
-  </p>
+  </p> */}
+
+<p>
+<NavLink to="/about" className='custom-link-color text-decoration-none'>
+  About
+</NavLink>
+</p>
+
+
+<p>
+<NavLink to="/portfolio" className='custom-link-color text-decoration-none'>
+  Portfolio
+</NavLink>
+</p>
+
+
+<p>
+<NavLink to="/" className='custom-link-color text-decoration-none'>
+  Blog
+</NavLink>
+</p>
+
+
+<p>
+<NavLink to="/" className='custom-link-color text-decoration-none'>
+  Our Team
+</NavLink>
+</p>
+
+<p>
+<NavLink to="/contactus" className='custom-link-color text-decoration-none'>
+ Contact Us
+</NavLink>
+</p>
+
 </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
@@ -83,10 +97,10 @@ export default function App() {
                 </a>
               </p>
               <p>
-                <a href='#!' className='custom-link-color text-decoration-none'>
-                  Contact Us
-                </a>
-              </p>
+<NavLink to="/contactus" className='custom-link-color text-decoration-none'>
+ Contact Us
+</NavLink>
+</p>
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>

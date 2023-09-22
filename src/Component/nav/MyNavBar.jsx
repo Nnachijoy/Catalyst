@@ -14,9 +14,15 @@ function MyNavBar() {
   return (
     <Navbar expand="lg" className="shadow-0 my-nav-bar">
       <Container>
-        <Navbar.Brand onClick={() => redir("/")}>
+        {/* <Navbar.Brand onClick={() => redir("/")}>
           <img src={catalystlogo} alt="" />{" "}
-        </Navbar.Brand>
+        </Navbar.Brand> */}
+
+<Navbar.Brand onClick={() => redir()}>
+  <img src={catalystlogo} alt="" style={{ width: '230px', height: 'auto' }} />
+</Navbar.Brand>
+
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="text-black fw-bolder">
@@ -45,7 +51,7 @@ function MyNavBar() {
               onClick={() => { setSelectedLink("/contactus"); redir("/contactus") }}
               className={`me-4 ${selectedLink === "/contactus" ? 'text-warning' : ''} fw-bolder`}
             >
-              ContactUs
+              Contact Us
             </Nav.Link>
 {/*  
             <Nav.Link

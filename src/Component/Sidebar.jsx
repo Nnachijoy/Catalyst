@@ -56,12 +56,12 @@ const Sidebar = ({ onSidebarItemClick, onSidebarToggle }) => {
   const [activeItems, setActiveItems] = useState(['overview']); // Initialize activeItems state with 'overview'
 
   const sidebarItems = [
-    { label: 'Your Startup', icon: <FaCheckCircle className='mt-1' style={{ color: activeItems.includes('overview') ? 'yellow' : 'gray'}} />, content: 'overview' },
-    { label: 'Your Team', icon: <FaCheckCircle  className='mt-2'  style={{ color: activeItems.includes('analytics') ? 'yellow' : 'gray' }} />, content: 'analytics' },
-    { label: 'Your Vision', icon: <FaCheckCircle  className='mt-2'  style={{ color: activeItems.includes('reports') ? 'yellow' : 'gray' }} />, content: 'reports' },
-    { label: 'Review', icon: <FaCheckCircle  className='mt-2' style={{ color: activeItems.includes('users') ? 'yellow' : 'gray' }} />, content: 'users' },
+    { label: 'Your Startup', icon: <FaCheckCircle className='mt-1' style={{ color: activeItems.includes('overview') ? '#F8CA25' : 'gray'}} />, content: 'overview' },
+    { label: 'Your Team', icon: <FaCheckCircle  className='mt-2'  style={{ color: activeItems.includes('analytics') ? '#F8CA25' : 'gray' }} />, content: 'analytics' },
+    { label: 'Your Vision', icon: <FaCheckCircle  className='mt-2'  style={{ color: activeItems.includes('reports') ? '#F8CA25' : 'gray' }} />, content: 'reports' },
+    { label: 'Review', icon: <FaCheckCircle  className='mt-2' style={{ color: activeItems.includes('users') ? ' #F8CA25' : 'gray' }} />, content: 'users' },
   ];
-
+ 
   const handleSidebarItemClick = (content, index) => {
     const updatedItems = activeItems.includes(content)
       ? activeItems.filter(item => item !== content)
